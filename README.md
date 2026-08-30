@@ -6,9 +6,17 @@ This repository is a greenfield Next.js rebuild. **Do not point `rubiconprotecti
 
 ## Preview
 
-Public Vercel Hobby preview (no custom domain):
+Attempted public Vercel Hobby preview (separate project named `rubicon-protection`, not valor-care-finder):
 
-- _Added after the first successful deploy._
+- https://rubicon-protection-valor-senior-care.vercel.app
+- https://rubicon-protection-9i7l86ef1-valor-senior-care.vercel.app
+
+Those URLs currently redirect to Vercel Authentication (SSO). A public unauthenticated preview was not possible from this environment for two reasons:
+
+1. The Vercel GitHub app on the Valor Senior Care Hobby team cannot see `benrubicon/rubicon-protection` (`repo_not_found`), so a git-linked project with automatic PR previews could not be created. Grant the Vercel GitHub app access to this repository, then import it as project `rubicon-protection`.
+2. The file-based Hobby preview that was created is behind Vercel Authentication. Disabling that protection via API returned project-not-found from this environment (Hobby teams often cannot turn Standard Protection off). In the Vercel dashboard: **rubicon-protection → Settings → Deployment Protection → disable Vercel Authentication** if the plan allows it.
+
+**DNS:** do not point `rubiconprotection.com` at this project until a cutover is explicitly approved.
 
 ## Local run
 
