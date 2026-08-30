@@ -1,7 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
+import { LogoMark } from "@/components/LogoMark";
 import { industries } from "@/lib/industries";
-import { photos } from "@/lib/photos";
 import { serviceNav, site } from "@/lib/site";
 
 export function Footer() {
@@ -10,9 +9,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-3">
-            <Image
-              src={photos.logo.src}
-              alt={photos.logo.alt}
+            <LogoMark
               width={96}
               height={96}
               className="h-24 w-24 object-contain"

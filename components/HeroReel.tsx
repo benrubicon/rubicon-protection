@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { LogoMark } from "@/components/LogoMark";
 import { photos } from "@/lib/photos";
 import { site } from "@/lib/site";
 
@@ -31,9 +32,7 @@ export function HeroReel() {
       </div>
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/55 to-black/35" />
       <div className="relative z-10 mx-auto flex min-h-[88vh] max-w-6xl flex-col justify-end px-4 pb-14 pt-28 sm:px-6 sm:pb-20">
-        <Image
-          src={photos.logo.src}
-          alt={photos.logo.alt}
+        <LogoMark
           width={160}
           height={160}
           priority

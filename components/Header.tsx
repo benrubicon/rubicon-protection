@@ -1,11 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { LogoMark } from "@/components/LogoMark";
 import { industries } from "@/lib/industries";
-import { photos } from "@/lib/photos";
 import { serviceNav, site } from "@/lib/site";
 
 function Menu({
@@ -92,9 +91,7 @@ export function Header() {
           className="flex min-w-0 items-center gap-3 sm:gap-4"
           onClick={() => setOpen(false)}
         >
-          <Image
-            src={photos.logo.src}
-            alt={photos.logo.alt}
+          <LogoMark
             width={128}
             height={128}
             priority
