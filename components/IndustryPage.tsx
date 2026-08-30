@@ -21,7 +21,6 @@ export function IndustryPage({ industry }: { industry: Industry }) {
           </div>
           <Photo
             {...hero}
-            caption={hero.caption}
             priority
             sizes="(min-width: 1024px) 42vw, 100vw"
           />
@@ -57,7 +56,6 @@ export function IndustryPage({ industry }: { industry: Industry }) {
               <Photo
                 key={photo.src}
                 {...photo}
-                caption={photo.caption}
                 sizes="(min-width: 1024px) 50vw, 100vw"
               />
             ))}

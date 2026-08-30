@@ -53,7 +53,6 @@ export default function ContactPage() {
         />
         <Photo
           {...photos.suitedPost}
-          caption="Suited post inside AllSaints."
           className="mt-6"
           sizes="(min-width: 1024px) 38vw, 100vw"
         />

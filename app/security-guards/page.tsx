@@ -74,12 +74,10 @@ export default function SecurityGuardsPage() {
           <div className="mt-8 grid gap-6 lg:grid-cols-2">
             <Photo
               {...photos.suitedPost}
-              caption="Suited post inside AllSaints."
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
             <Photo
               {...photos.cameraInstall}
-              caption="Technical work at AllSaints."
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
           </div>
@@ -90,7 +88,6 @@ export default function SecurityGuardsPage() {
         <div className="mx-auto grid max-w-6xl items-start gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2">
           <Photo
             {...photos.nightPatrol}
-            caption="Night patrol at Ashley Furniture Warehouse."
             sizes="(min-width: 1024px) 50vw, 100vw"
           />
           <div className="grid gap-10">

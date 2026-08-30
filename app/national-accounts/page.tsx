@@ -26,7 +26,6 @@ export default function NationalAccountsPage() {
           </div>
           <Photo
             {...photos.suitedPost}
-            caption="Suited post inside AllSaints."
             priority
             sizes="(min-width: 1024px) 42vw, 100vw"
           />
@@ -50,9 +49,9 @@ export default function NationalAccountsPage() {
             </p>
             <p className="leading-7 text-muted">
               We do not publish a list of national clients or dollar amounts. The
-              photographs on this page are Rubicon posts at locations visible in
-              the frame. If you need a quote, tell us how many sites, what kind of
-              post, and whether coverage is armed or unarmed.
+              photographs on this page are from Rubicon posts. If you need a
+              quote, tell us how many sites, what kind of post, and whether
+              coverage is armed or unarmed.
             </p>
           </div>
           <ul className="mt-10 grid gap-4 sm:grid-cols-3">
@@ -101,12 +100,10 @@ export default function NationalAccountsPage() {
           <div className="grid gap-6 lg:grid-cols-2">
             <Photo
               {...photos.nightPatrol}
-              caption="Night patrol at Ashley Furniture Warehouse."
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
             <Photo
               {...photos.cameraInstall}
-              caption="Camera install at AllSaints."
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
           </div>

@@ -65,8 +65,8 @@ Click-to-call: `833-217-1117` (`tel:+18332171117`).
 - No invented staff bios, street addresses, extra licenses, client logos, testimonials, awards, dollar amounts, or extra named clients
 - COVID-19 / mask-policy copy from the old guards page is not included
 - Logo: circular roaring lion mark with a transparent background. Header and footer use `/rubicon-brand-photos/logo-lion.png`. Favicon: `public/logo-lion.png` / `public/icon.png`.
-- Brand photographs in `public/rubicon-brand-photos/` may be described as Rubicon posts. AllSaints and Ashley Furniture are named only as locations visible in those photos. Fleet cutouts sit on dark asphalt. No sidewalk/outreach photo.
-- Licensed stock in `public/stock/` is generic industry photography and is captioned as such—never as a Rubicon post.
+- Brand photographs in `public/rubicon-brand-photos/` are Rubicon posts. Photos have no captions and no client names in alt text. Fleet cutouts sit on dark asphalt. No sidewalk/outreach photo.
+- Licensed stock in `public/stock/` is generic industry photography. No figcaptions. No client names on photographs.
 - National commercial accounts: one call, Rubicon finds coverage and staffs the posts. Copy is on Home, National Accounts, and Security Guards, with a short mention on Event Security.
 - Home hero is a Ken Burns reel of real brand photos. Arizona-based / worldwide EP copy is unchanged.
 

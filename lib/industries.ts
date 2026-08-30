@@ -1,6 +1,4 @@
-import { photos, stock, STOCK_CAPTION, type PhotoMeta } from "@/lib/photos";
-
-export type IndustryPhoto = PhotoMeta & { caption: string };
+import { photos, stock, type PhotoMeta } from "@/lib/photos";
 
 export type Industry = {
   slug: string;
@@ -12,7 +10,7 @@ export type Industry = {
   lede: string;
   paragraphs: string[];
   points: { title: string; body: string }[];
-  photos: IndustryPhoto[];
+  photos: PhotoMeta[];
 };
 
 export const industries: Industry[] = [
@@ -45,8 +43,8 @@ export const industries: Industry[] = [
       },
     ],
     photos: [
-      { ...stock.constructionWork, caption: STOCK_CAPTION },
-      { ...stock.constructionSite, caption: STOCK_CAPTION },
+      { ...stock.constructionWork },
+      { ...stock.constructionSite },
     ],
   },
   {
@@ -78,8 +76,8 @@ export const industries: Industry[] = [
       },
     ],
     photos: [
-      { ...stock.officeTowers, caption: STOCK_CAPTION },
-      { ...stock.officeInterior, caption: STOCK_CAPTION },
+      { ...stock.officeTowers },
+      { ...stock.officeInterior },
     ],
   },
   {
@@ -111,8 +109,8 @@ export const industries: Industry[] = [
       },
     ],
     photos: [
-      { ...stock.parkingGarage, caption: STOCK_CAPTION },
-      { ...stock.parkingDeck, caption: STOCK_CAPTION },
+      { ...stock.parkingGarage },
+      { ...stock.parkingDeck },
     ],
   },
   {
@@ -143,16 +141,7 @@ export const industries: Industry[] = [
         body: "Where a site needs cameras or related work on the floor, we treat it as part of protecting the store—not as a separate theater.",
       },
     ],
-    photos: [
-      {
-        ...photos.suitedPost,
-        caption: "Suited post inside AllSaints.",
-      },
-      {
-        ...photos.cameraInstall,
-        caption: "Camera install at AllSaints.",
-      },
-    ],
+    photos: [photos.suitedPost, photos.cameraInstall],
   },
   {
     slug: "warehouses",
@@ -182,13 +171,7 @@ export const industries: Industry[] = [
         body: "Unauthorized camping and loitering on private industrial property is handled firmly and without turning people into a photo opportunity.",
       },
     ],
-    photos: [
-      {
-        ...photos.nightPatrol,
-        caption: "Night patrol at Ashley Furniture Warehouse.",
-      },
-      { ...stock.warehouseInterior, caption: STOCK_CAPTION },
-    ],
+    photos: [photos.nightPatrol, stock.warehouseInterior],
   },
   {
     slug: "healthcare",
@@ -219,8 +202,8 @@ export const industries: Industry[] = [
       },
     ],
     photos: [
-      { ...stock.healthcareHospital, caption: STOCK_CAPTION },
-      { ...stock.healthcareClinic, caption: STOCK_CAPTION },
+      { ...stock.healthcareHospital },
+      { ...stock.healthcareClinic },
     ],
   },
   {
@@ -252,8 +235,8 @@ export const industries: Industry[] = [
       },
     ],
     photos: [
-      { ...stock.casinoFloor, caption: STOCK_CAPTION },
-      { ...stock.casinoTable, caption: STOCK_CAPTION },
+      { ...stock.casinoFloor },
+      { ...stock.casinoTable },
     ],
   },
   {
@@ -285,8 +268,8 @@ export const industries: Industry[] = [
       },
     ],
     photos: [
-      { ...stock.governmentCourthouse, caption: STOCK_CAPTION },
-      { ...stock.governmentCivic, caption: STOCK_CAPTION },
+      { ...stock.governmentCourthouse },
+      { ...stock.governmentCivic },
     ],
   },
   {
@@ -318,8 +301,8 @@ export const industries: Industry[] = [
       },
     ],
     photos: [
-      { ...stock.concertStage, caption: STOCK_CAPTION },
-      { ...stock.concertCrowd, caption: STOCK_CAPTION },
+      { ...stock.concertStage },
+      { ...stock.concertCrowd },
     ],
   },
   {
@@ -351,9 +334,9 @@ export const industries: Industry[] = [
       },
     ],
     photos: [
-      { ...stock.europeCity, caption: STOCK_CAPTION },
-      { ...stock.ukLondon, caption: STOCK_CAPTION },
-      { ...stock.africaCity, caption: STOCK_CAPTION },
+      { ...stock.europeCity },
+      { ...stock.ukLondon },
+      { ...stock.africaCity },
     ],
   },
 ];

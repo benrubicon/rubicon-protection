@@ -1,4 +1,4 @@
-/** Real brand files in public/rubicon-brand-photos/. Caption these as Rubicon posts. */
+/** Real brand files in public/rubicon-brand-photos/. Generic alts only — no client names. */
 export const photos = {
   logo: {
     src: "/rubicon-brand-photos/logo-lion.png",
@@ -10,31 +10,31 @@ export const photos = {
     src: "/rubicon-brand-photos/officer-portrait-polo.jpeg",
     width: 469,
     height: 682,
-    alt: "Rubicon Protection officer in a black branded polo, black cap, and khaki trousers",
+    alt: "Security officer in a black branded polo, black cap, and khaki trousers",
   },
   cameraInstall: {
     src: "/rubicon-brand-photos/photo-camera-install-allsaints.jpg",
     width: 832,
     height: 1248,
-    alt: "Rubicon technician on a ladder installing a ceiling camera inside an AllSaints store",
+    alt: "Officer installing a ceiling camera in a retail store",
   },
   nightPatrol: {
     src: "/rubicon-brand-photos/photo-night-patrol-ashley.jpg",
     width: 848,
     height: 987,
-    alt: "Rubicon officer on night patrol checking a warehouse door at Ashley Furniture Warehouse",
+    alt: "Night warehouse patrol",
   },
   suitedPost: {
     src: "/rubicon-brand-photos/photo-allsaints-suited-post.jpg",
     width: 1168,
     height: 784,
-    alt: "Suited Rubicon officer on post inside an AllSaints store",
+    alt: "Suited officer on post inside a retail store",
   },
   epWalk: {
     src: "/rubicon-brand-photos/photo-ep-walk-escalade.jpg",
     width: 784,
     height: 1168,
-    alt: "Executive protection team walking a principal from a black Cadillac Escalade",
+    alt: "Executive protection team with a black SUV",
   },
   epExit: {
     src: "/rubicon-brand-photos/photo-ep-suv-exit.jpg",
@@ -46,27 +46,23 @@ export const photos = {
     src: "/rubicon-brand-photos/fleet-tesla-y-rear.png",
     width: 837,
     height: 595,
-    alt: "Rubicon Protection Tesla Model Y patrol vehicle, rear view, marked SECURITY with 833-217-1117",
+    alt: "Marked SECURITY patrol vehicle, rear view",
   },
   ioniqFront: {
     src: "/rubicon-brand-photos/fleet-ioniq5-front.png",
     width: 953,
     height: 675,
-    alt: "Rubicon Protection Hyundai Ioniq 5 patrol vehicle with SECURITY graphics and lion mark on the hood",
+    alt: "Marked SECURITY patrol vehicle, front view",
   },
   teslaSide: {
     src: "/rubicon-brand-photos/fleet-tesla-y-side.png",
     width: 1256,
     height: 614,
-    alt: "Rubicon Protection Tesla Model Y patrol vehicle, side view, with lion door logo and SECURITY stripe",
+    alt: "Marked SECURITY patrol vehicle, side view",
   },
 } as const;
 
-/**
- * Licensed stock in public/stock/. Generic industry photography — never caption as a Rubicon post.
- */
-export const STOCK_CAPTION =
-  "Generic industry photography. Not a Rubicon post.";
+/** Licensed stock in public/stock/. Generic industry photography — never a client name. */
 
 export const stock = {
   constructionWork: {

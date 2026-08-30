@@ -5,7 +5,6 @@ type PhotoProps = {
   alt: string;
   width: number;
   height: number;
-  caption?: string;
   priority?: boolean;
   fit?: "cover" | "contain";
   sizes?: string;
@@ -17,7 +16,6 @@ export function Photo({
   alt,
   width,
   height,
-  caption,
   priority,
   fit = "cover",
   sizes = "(min-width: 1024px) 50vw, 100vw",
@@ -38,11 +36,6 @@ export function Photo({
           fit === "contain" ? "object-contain" : "object-cover"
         }`}
       />
-      {caption ? (
-        <figcaption className="border-t border-line bg-charcoal px-4 py-3 text-sm leading-6 text-muted">
-          {caption}
-        </figcaption>
-      ) : null}
     </figure>
   );
 }

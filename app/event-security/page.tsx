@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
 import { Photo } from "@/components/Photo";
-import { stock, STOCK_CAPTION } from "@/lib/photos";
+import { stock } from "@/lib/photos";
 import { nationwide } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -41,13 +41,11 @@ export default function EventSecurityPage() {
           <div className="grid gap-6 lg:grid-cols-2">
             <Photo
               {...stock.concertStage}
-              caption={STOCK_CAPTION}
               priority
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
             <Photo
               {...stock.concertCrowd}
-              caption={STOCK_CAPTION}
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
           </div>

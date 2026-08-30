@@ -21,8 +21,7 @@ export default function IndustriesIndexPage() {
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-muted">
             Commercial coverage by site type. Each page is a real offering—not a
-            placeholder. Brand photographs are labeled as Rubicon posts. Stock
-            photographs are labeled as generic industry photography.
+            placeholder.
           </p>
         </div>
       </section>

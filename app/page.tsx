@@ -20,18 +20,15 @@ export default function HomePage() {
             Real work, real posts
           </h2>
           <p className="mt-4 max-w-3xl text-muted leading-7">
-            These photographs are from Rubicon posts—not stock. Captions name the
-            locations only because they are visible in the frame.
+            These photographs are from Rubicon posts—not stock.
           </p>
           <div className="mt-8 grid gap-6 lg:grid-cols-2">
             <Photo
               {...photos.cameraInstall}
-              caption="Camera install at AllSaints."
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
             <Photo
               {...photos.nightPatrol}
-              caption="Night patrol at Ashley Furniture Warehouse."
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
           </div>
@@ -106,8 +103,7 @@ export default function HomePage() {
           </h2>
           <p className="mt-4 max-w-3xl leading-7 text-muted">
             Construction through international. Each industry page has real copy
-            and photography. Stock images are labeled as generic industry
-            photography—not Rubicon posts.
+            and photography.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
             {industries.map((industry) => {
