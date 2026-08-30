@@ -2,8 +2,8 @@
 export const photos = {
   logo: {
     src: "/rubicon-brand-photos/logo-lion.png",
-    width: 946,
-    height: 946,
+    width: 914,
+    height: 914,
     alt: "Rubicon Protection Security roaring lion mark",
   },
   officer: {

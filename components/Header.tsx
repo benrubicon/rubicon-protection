@@ -95,10 +95,10 @@ export function Header() {
           <Image
             src={photos.logo.src}
             alt={photos.logo.alt}
-            width={96}
-            height={96}
+            width={128}
+            height={128}
             priority
-            className="h-16 w-16 shrink-0 object-contain sm:h-20 sm:w-20 lg:h-24 lg:w-24"
+            className="h-20 w-20 shrink-0 object-contain sm:h-24 sm:w-24 lg:h-28 lg:w-28"
           />
           <span className="min-w-0">
             <span className="display block text-sm font-semibold uppercase tracking-[0.18em] sm:text-base">

@@ -13,9 +13,9 @@ export function Footer() {
             <Image
               src={photos.logo.src}
               alt={photos.logo.alt}
-              width={80}
-              height={80}
-              className="h-20 w-20 object-contain"
+              width={96}
+              height={96}
+              className="h-24 w-24 object-contain"
             />
             <div>
               <p className="display text-sm font-semibold uppercase tracking-[0.16em]">
