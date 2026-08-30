@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { CtaBand } from "@/components/CtaBand";
+import { Photo } from "@/components/Photo";
+import { photos } from "@/lib/photos";
+import { nationwide } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Event Security",
@@ -21,6 +24,28 @@ export default function EventSecurityPage() {
             proper screening and people who can run a checkpoint without turning
             the line into a fight. Rubicon plans, staffs, and runs events of any
             size.
+          </p>
+        </div>
+      </section>
+
+      <section className="border-b border-line">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+          <div className="grid gap-6 lg:grid-cols-2">
+            <Photo
+              {...photos.suitedPost}
+              caption="Suited post inside AllSaints."
+              sizes="(min-width: 1024px) 50vw, 100vw"
+            />
+            <Photo
+              {...photos.nightPatrol}
+              caption="Night patrol at Ashley Furniture Warehouse."
+              sizes="(min-width: 1024px) 50vw, 100vw"
+            />
+          </div>
+          <p className="mt-8 max-w-3xl text-sm leading-7 text-muted">
+            {nationwide.kicker}. Companies with many locations can call Rubicon
+            once for coverage instead of hiring locally at each site. One
+            contract, many posts.
           </p>
         </div>
       </section>

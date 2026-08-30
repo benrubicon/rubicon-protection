@@ -16,16 +16,16 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <Link
           href="/"
-          className="flex min-w-0 items-center gap-3"
+          className="flex min-w-0 items-center gap-3 sm:gap-4"
           onClick={() => setOpen(false)}
         >
           <Image
             src={photos.logo.src}
             alt={photos.logo.alt}
-            width={48}
-            height={48}
+            width={96}
+            height={96}
             priority
-            className="h-12 w-12 shrink-0 object-contain"
+            className="h-16 w-16 shrink-0 object-contain sm:h-20 sm:w-20 lg:h-24 lg:w-24"
           />
           <span className="min-w-0">
             <span className="display block text-sm font-semibold uppercase tracking-[0.18em] sm:text-base">

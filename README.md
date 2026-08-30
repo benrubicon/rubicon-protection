@@ -6,17 +6,11 @@ This repository is a greenfield Next.js rebuild. **Do not point `rubiconprotecti
 
 ## Preview
 
-Attempted public Vercel Hobby preview (separate project named `rubicon-protection`, not valor-care-finder):
+Git-linked Hobby project: `rubicon-protection-ixjs` (separate from valor-care-finder). PR 1 preview:
 
-- https://rubicon-protection-valor-senior-care.vercel.app
-- https://rubicon-protection-9i7l86ef1-valor-senior-care.vercel.app
+- https://rubicon-protection-ixjs-git-cursor-mar-b92c86-valor-senior-care.vercel.app
 
-Those URLs currently redirect to Vercel Authentication (SSO). A public unauthenticated preview was not possible from this environment for two reasons:
-
-1. The Vercel GitHub app on the Valor Senior Care Hobby team cannot see `benrubicon/rubicon-protection` (`repo_not_found`), so a git-linked project with automatic PR previews could not be created. Grant the Vercel GitHub app access to this repository, then import it as project `rubicon-protection`.
-2. The file-based Hobby preview that was created is behind Vercel Authentication. Disabling that protection via API returned project-not-found from this environment (Hobby teams often cannot turn Standard Protection off). In the Vercel dashboard: **rubicon-protection → Settings → Deployment Protection → disable Vercel Authentication** if the plan allows it.
-
-**DNS:** do not point `rubiconprotection.com` at this project until a cutover is explicitly approved.
+**DNS:** do not point `rubiconprotection.com` at this project until a cutover is explicitly approved. Do not merge this branch to `main` until a cutover is approved.
 
 ## Local run
 
@@ -58,8 +52,10 @@ Click-to-call: `833-217-1117` (`tel:+18332171117`).
 - No careers/hiring CTA on the homepage
 - No invented staff bios, street addresses, extra licenses, client logos, testimonials, or awards
 - COVID-19 / mask-policy copy from the old guards page is not included
-- Logo: circular roaring lion mark. Header and footer use `/rubicon-brand-photos/logo-lion.png`. Favicon stays `public/logo-lion.png` / `public/icon.png`.
-- Work, fleet, officer, and EP photographs live in `public/rubicon-brand-photos/` and are rendered with `next/image` on Home, Security Guards, and Executive Protection. AllSaints and Ashley Furniture are named only as locations visible in those photos. No sidewalk/outreach photo is used.
+- Logo: circular roaring lion mark with a transparent background. Header and footer use `/rubicon-brand-photos/logo-lion.png`. Favicon: `public/logo-lion.png` / `public/icon.png`.
+- Work, fleet, officer, and EP photographs live in `public/rubicon-brand-photos/` and are rendered with `next/image` on every page. Fleet cutouts sit on dark asphalt. AllSaints and Ashley Furniture are named only as locations visible in those photos. No sidewalk/outreach photo is used.
+- National commercial accounts: one call, Rubicon finds coverage and staffs the posts. Copy is on Home and Security Guards, with a short mention on Event Security. No invented dollar amounts or extra named clients.
+- Home hero is a Ken Burns reel of real brand photos. Arizona-based / worldwide EP copy is unchanged.
 
 ## Stack
 

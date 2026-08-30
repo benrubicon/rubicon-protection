@@ -70,3 +70,61 @@ body {
   text-transform: uppercase;
   color: #cfcfcf;
 }
+
+.hero-reel {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-slide {
+  opacity: 0;
+  transform: scale(1.06);
+  animation: ken-burns 32s infinite;
+}
+
+.hero-slide-0 {
+  animation-delay: 0s;
+}
+.hero-slide-1 {
+  animation-delay: 6.4s;
+}
+.hero-slide-2 {
+  animation-delay: 12.8s;
+}
+.hero-slide-3 {
+  animation-delay: 19.2s;
+}
+.hero-slide-4 {
+  animation-delay: 25.6s;
+}
+
+@keyframes ken-burns {
+  0% {
+    opacity: 0;
+    transform: scale(1.06) translate3d(0, 0, 0);
+  }
+  4% {
+    opacity: 1;
+  }
+  18% {
+    opacity: 1;
+    transform: scale(1.16) translate3d(-2%, -1.5%, 0);
+  }
+  22% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-slide {
+    animation: none;
+    opacity: 0;
+    transform: none;
+  }
+  .hero-slide-0 {
+    opacity: 1;
+  }
+}

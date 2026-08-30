@@ -2,8 +2,8 @@
 export const photos = {
   logo: {
     src: "/rubicon-brand-photos/logo-lion.png",
-    width: 1040,
-    height: 992,
+    width: 946,
+    height: 946,
     alt: "Rubicon Protection Security roaring lion mark",
   },
   officer: {
@@ -44,20 +44,20 @@ export const photos = {
   },
   teslaRear: {
     src: "/rubicon-brand-photos/fleet-tesla-y-rear.png",
-    width: 1360,
-    height: 768,
+    width: 837,
+    height: 595,
     alt: "Rubicon Protection Tesla Model Y patrol vehicle, rear view, marked SECURITY with 833-217-1117",
   },
   ioniqFront: {
     src: "/rubicon-brand-photos/fleet-ioniq5-front.png",
-    width: 1360,
-    height: 768,
+    width: 953,
+    height: 675,
     alt: "Rubicon Protection Hyundai Ioniq 5 patrol vehicle with SECURITY graphics and lion mark on the hood",
   },
   teslaSide: {
     src: "/rubicon-brand-photos/fleet-tesla-y-side.png",
-    width: 1360,
-    height: 768,
+    width: 1256,
+    height: 614,
     alt: "Rubicon Protection Tesla Model Y patrol vehicle, side view, with lion door logo and SECURITY stripe",
   },
 } as const;

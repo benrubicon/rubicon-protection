@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { Photo } from "@/components/Photo";
 import { QuoteForm } from "@/components/QuoteForm";
+import { photos } from "@/lib/photos";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -44,6 +46,11 @@ export default function ContactPage() {
         <p className="mt-8 text-sm leading-6 text-muted">
           {site.licenses.guard}. {site.licenses.investigator}.
         </p>
+        <Photo
+          {...photos.officer}
+          className="mt-10"
+          sizes="(min-width: 1024px) 38vw, 100vw"
+        />
       </div>
       <QuoteForm />
     </section>

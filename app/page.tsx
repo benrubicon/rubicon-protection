@@ -1,49 +1,15 @@
 import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
+import { HeroReel } from "@/components/HeroReel";
+import { NationwideBand } from "@/components/NationwideBand";
 import { Photo } from "@/components/Photo";
 import { photos } from "@/lib/photos";
-import { services, site } from "@/lib/site";
+import { services } from "@/lib/site";
 
 export default function HomePage() {
   return (
     <>
-      <section className="relative overflow-hidden border-b border-line">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
-          <div>
-            <p className="kicker">{site.tagline}</p>
-            <h1 className="display mt-4 max-w-3xl text-4xl font-semibold uppercase leading-[0.95] sm:text-6xl">
-              Executive Protection and Security Guards
-            </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">
-              Rubicon Protection staffs commercial sites, venues, and close-protection
-              details with people who already know the work: law enforcement,
-              military, and private-sector professionals. Armed and unarmed
-              coverage. Executive protection teams that can operate worldwide.
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center bg-white px-5 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-black hover:bg-zinc-200"
-              >
-                Get a Quote
-              </Link>
-              <a
-                href={`tel:${site.phoneTel}`}
-                className="inline-flex items-center justify-center border border-white px-5 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-white hover:bg-white hover:text-black"
-              >
-                {site.phoneDisplay}
-              </a>
-            </div>
-          </div>
-          <Photo
-            {...photos.teslaRear}
-            fit="contain"
-            priority
-            caption="Marked patrol vehicle. Call 833-217-1117."
-            sizes="(min-width: 1024px) 42vw, 100vw"
-          />
-        </div>
-      </section>
+      <HeroReel />
 
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
@@ -129,6 +95,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <NationwideBand />
 
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">

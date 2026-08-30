@@ -25,9 +25,7 @@ export function Photo({
 }: PhotoProps) {
   return (
     <figure
-      className={`overflow-hidden border border-line ${
-        fit === "contain" ? "bg-white" : "bg-charcoal"
-      } ${className}`}
+      className={`overflow-hidden border border-line bg-charcoal ${className}`}
     >
       <Image
         src={src}

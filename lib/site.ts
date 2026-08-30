@@ -11,6 +11,12 @@ export const site = {
   },
 } as const;
 
+export const nationwide = {
+  kicker: "National commercial accounts",
+  title: "One call. We staff the posts.",
+  body: "Nationwide coverage for major companies. Instead of each store or location figuring out who to hire, the company calls Rubicon once and Rubicon finds appropriate coverage. One contract, many sites—we staff the posts.",
+} as const;
+
 export const nav = [
   { href: "/", label: "Home" },
   { href: "/executive-protection", label: "Executive Protection" },
