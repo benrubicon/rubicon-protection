@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0b0b0b;
+  --foreground: #f4f4f4;
+  --muted: #b3b3b3;
+  --charcoal: #1c1c1c;
+  --charcoal-2: #2a2a2a;
+  --line: #3a3a3a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-charcoal: var(--charcoal);
+  --color-charcoal-2: var(--charcoal-2);
+  --color-line: var(--line);
+  --font-sans: var(--font-geist-sans);
+  --font-display: var(--font-display);
+}
+
+html {
+  background: var(--background);
+  color: var(--foreground);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: #f4f4f4;
+  color: #0b0b0b;
+}
+
+:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 80;
+  background: #ffffff;
+  color: #0b0b0b;
+  padding: 0.5rem 0.75rem;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.display {
+  font-family: var(--font-display), var(--font-sans), system-ui, sans-serif;
+  letter-spacing: 0.02em;
+  text-wrap: balance;
+}
+
+.kicker {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #cfcfcf;
+}
+
+.hero-reel {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-slide {
+  opacity: 0;
+  transform: scale(1.06);
+  animation: ken-burns 32s infinite;
+}
+
+.hero-slide-0 {
+  animation-delay: 0s;
+}
+.hero-slide-1 {
+  animation-delay: 6.4s;
+}
+.hero-slide-2 {
+  animation-delay: 12.8s;
+}
+.hero-slide-3 {
+  animation-delay: 19.2s;
+}
+.hero-slide-4 {
+  animation-delay: 25.6s;
+}
+
+@keyframes ken-burns {
+  0% {
+    opacity: 0;
+    transform: scale(1.06) translate3d(0, 0, 0);
+  }
+  4% {
+    opacity: 1;
+  }
+  18% {
+    opacity: 1;
+    transform: scale(1.16) translate3d(-2%, -1.5%, 0);
+  }
+  22% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-slide {
+    animation: none;
+    opacity: 0;
+    transform: none;
+  }
+  .hero-slide-0 {
+    opacity: 1;
+  }
+}
