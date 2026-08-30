@@ -20,8 +20,7 @@ export default function IndustriesIndexPage() {
             Industries
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-muted">
-            Commercial coverage by site type. Each page is a real offering—not a
-            placeholder.
+            Commercial coverage by site type.
           </p>
         </div>
       </section>

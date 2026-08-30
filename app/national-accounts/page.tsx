@@ -48,8 +48,7 @@ export default function NationalAccountsPage() {
               staff the posts.
             </p>
             <p className="leading-7 text-muted">
-              We do not publish a list of national clients or dollar amounts. The
-              photographs on this page are from Rubicon posts. If you need a
+              The photographs on this page are from Rubicon posts. If you need a
               quote, tell us how many sites, what kind of post, and whether
               coverage is armed or unarmed.
             </p>

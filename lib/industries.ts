@@ -26,7 +26,7 @@ export const industries: Industry[] = [
     lede: "A construction site is open by design: trades, deliveries, inspectors, and equipment moving through the same gate. Coverage has to know who belongs on the pad and who does not.",
     paragraphs: [
       "Rubicon staffs construction posts the same way we staff other commercial sites: with people who can run a gate, check credentials, and stay on the property after hours. The day shift is about access. The night shift is about the site itself—copper, tools, vehicles, and the openings a fence does not actually close.",
-      "Tell us the address, the hours, whether the post is armed or unarmed, and how deliveries are supposed to move. We size standing coverage, roaming checks, or a mix. We do not invent a program that only works on a finished building.",
+      "Tell us the address, the hours, whether the post is armed or unarmed, and how deliveries are supposed to move. We size standing coverage, roaming checks, or a mix for the jobsite as it stands.",
     ],
     points: [
       {
@@ -68,7 +68,7 @@ export const industries: Industry[] = [
       },
       {
         title: "Floors",
-        body: "Secure floors, server rooms, and executive suites get their own rules. Officers enforce those rules, they do not invent them.",
+        body: "Secure floors, server rooms, and executive suites get their own rules. Officers enforce those rules.",
       },
       {
         title: "Overnight",
@@ -218,7 +218,7 @@ export const industries: Industry[] = [
     lede: "Casino work is public, crowded, and unforgiving of a weak door. Screening thousands of people is a skill. So is standing a floor without becoming part of the show.",
     paragraphs: [
       "Rubicon provides security for tribal casinos and related properties. The same teams that screen concert crowds work casino doors: bags, credentials, prohibited items, and the judgment to keep the night moving.",
-      "Coverage can include the floor, parking, and event nights on the property. We staff the posts you specify. We do not invent a program named after a property we do not have on a contract.",
+      "Coverage can include the floor, parking, and event nights on the property. We staff the posts you specify.",
     ],
     points: [
       {
@@ -251,7 +251,7 @@ export const industries: Industry[] = [
     lede: "Government sites need officers who can run a checkpoint and keep unauthorized people out of the rooms that actually matter.",
     paragraphs: [
       "Rubicon provides uniformed security guards, armed and unarmed, for government entities as well as businesses. Officers run checkpoints, office entrances, and secure areas of buildings. They check credentials and keep unauthorized people out.",
-      "We are licensed in Arizona as a security guard company and as private investigators. Coverage is scoped to the site you describe—not a brochure list of agencies we do not name.",
+      "We are licensed in Arizona as a security guard company and as private investigators. Coverage is scoped to the site you describe.",
     ],
     points: [
       {
@@ -311,13 +311,13 @@ export const industries: Industry[] = [
     title: "International",
     kicker: "Europe, the UK, and Africa",
     summary:
-      "A large network of subcontractors that can handle security in Europe, the UK, and Africa—without inventing partner names.",
+      "Coverage in Europe, the UK, and Africa is handled through a large subcontractor network.",
     metaDescription:
       "International security coverage in Europe, the UK, and Africa through Rubicon’s subcontractor network. 833-217-1117.",
     lede: "Rubicon has a large network of subcontractors that can handle security in Europe, the UK, and Africa.",
     paragraphs: [
-      "When a principal, a tour, or a commercial program leaves the United States, coverage still has to stand up. We do not publish a roster of partner companies. We do staff through a network large enough to work those regions.",
-      "Executive protection details can operate worldwide, with insurance that covers those operations. International site work is scoped the same way as a domestic post: tell us the cities, the dates, and what has to be covered. We find appropriate coverage. We do not invent client names or dollar amounts to make the map look busier.",
+      "Rubicon has a large network of subcontractors that can handle security in Europe, the UK, and Africa. We do not publish a roster of partner companies. We staff through that network when a principal, a tour, or a commercial program needs coverage in those regions.",
+      "Executive protection details can operate worldwide, with insurance that covers those operations. International site work is scoped the same way as a domestic post: tell us the cities, the dates, and what has to be covered.",
     ],
     points: [
       {
@@ -326,7 +326,7 @@ export const industries: Industry[] = [
       },
       {
         title: "The UK",
-        body: "The same network, scoped to the itinerary—not a storefront we do not operate.",
+        body: "The same network, scoped to the itinerary.",
       },
       {
         title: "Africa",
