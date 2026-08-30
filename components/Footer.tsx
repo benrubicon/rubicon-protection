@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { photos } from "@/lib/photos";
 import { nav, site } from "@/lib/site";
 
 export function Footer() {
@@ -9,11 +10,11 @@ export function Footer() {
         <div>
           <div className="flex items-center gap-3">
             <Image
-              src="/logo-lion.png"
-              alt="Rubicon Protection Security lion logo"
+              src={photos.logo.src}
+              alt={photos.logo.alt}
               width={56}
               height={56}
-              className="h-14 w-14"
+              className="h-14 w-14 object-contain"
             />
             <div>
               <p className="display text-sm font-semibold uppercase tracking-[0.16em]">

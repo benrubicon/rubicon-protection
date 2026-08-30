@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { photos } from "@/lib/photos";
 import { nav, site } from "@/lib/site";
 
 export function Header() {
@@ -19,12 +20,12 @@ export function Header() {
           onClick={() => setOpen(false)}
         >
           <Image
-            src="/logo-lion.png"
-            alt="Rubicon Protection Security lion logo"
+            src={photos.logo.src}
+            alt={photos.logo.alt}
             width={48}
             height={48}
             priority
-            className="h-12 w-12 shrink-0"
+            className="h-12 w-12 shrink-0 object-contain"
           />
           <span className="min-w-0">
             <span className="display block text-sm font-semibold uppercase tracking-[0.18em] sm:text-base">

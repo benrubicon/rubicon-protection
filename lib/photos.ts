@@ -1,5 +1,11 @@
 /** Real brand files in public/rubicon-brand-photos/. Do not add stock. */
 export const photos = {
+  logo: {
+    src: "/rubicon-brand-photos/logo-lion.png",
+    width: 1040,
+    height: 992,
+    alt: "Rubicon Protection Security roaring lion mark",
+  },
   officer: {
     src: "/rubicon-brand-photos/officer-portrait-polo.jpeg",
     width: 469,
