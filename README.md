@@ -58,7 +58,8 @@ Click-to-call: `833-217-1117` (`tel:+18332171117`).
 - No careers/hiring CTA on the homepage
 - No invented staff bios, street addresses, extra licenses, client logos, testimonials, or awards
 - COVID-19 / mask-policy copy from the old guards page is not included
-- Logo: circular roaring lion mark (`public/logo-lion.png`), used in header, footer, and favicon
+- Logo: circular roaring lion mark (`public/logo-lion.png` / `public/icon.png`), used in header, footer, and favicon
+- Work, fleet, officer, and EP photographs live in `public/rubicon-brand-photos/` and are rendered with `next/image` on Home, Security Guards, and Executive Protection. AllSaints and Ashley Furniture are named only as locations visible in those photos. No sidewalk/outreach photo is used.
 
 ## Stack
 

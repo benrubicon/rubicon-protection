@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { CtaBand } from "@/components/CtaBand";
+import { Photo } from "@/components/Photo";
+import { photos } from "@/lib/photos";
 
 export const metadata: Metadata = {
   title: "Executive Protection",
@@ -25,21 +26,16 @@ export default function ExecutiveProtectionPage() {
               for principals who need professionals, not theater.
             </p>
           </div>
-          <div className="border border-line bg-charcoal p-10">
-            <Image
-              src="/logo-lion.png"
-              alt="Rubicon Protection Security lion logo"
-              width={280}
-              height={280}
-              className="mx-auto h-auto w-48 sm:w-64"
-              priority
-            />
-          </div>
+          <Photo
+            {...photos.epWalk}
+            priority
+            sizes="(min-width: 1024px) 42vw, 100vw"
+          />
         </div>
       </section>
 
       <section className="border-b border-line">
-        <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-6xl items-start gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2">
           <article>
             <h2 className="display text-3xl font-semibold uppercase">
               Protection details
@@ -63,6 +59,26 @@ export default function ExecutiveProtectionPage() {
               continuity away from home.
             </p>
           </article>
+        </div>
+      </section>
+
+      <section className="border-b border-line">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2">
+          <Photo
+            {...photos.epExit}
+            sizes="(min-width: 1024px) 42vw, 100vw"
+          />
+          <div>
+            <p className="kicker">Movements</p>
+            <h2 className="display mt-3 text-3xl font-semibold uppercase sm:text-4xl">
+              Arrivals and departures
+            </h2>
+            <p className="mt-4 leading-7 text-muted">
+              Vehicle work is part of the detail: holding doors, scanning the
+              approach, and keeping the principal moving. Coverage is sized to the
+              schedule, not staged for a photograph.
+            </p>
+          </div>
         </div>
       </section>
 

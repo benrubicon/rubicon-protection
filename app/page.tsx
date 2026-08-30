@@ -1,13 +1,14 @@
-import Image from "next/image";
 import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
+import { Photo } from "@/components/Photo";
+import { photos } from "@/lib/photos";
 import { services, site } from "@/lib/site";
 
 export default function HomePage() {
   return (
     <>
       <section className="relative overflow-hidden border-b border-line">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:py-20">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
           <div>
             <p className="kicker">{site.tagline}</p>
             <h1 className="display mt-4 max-w-3xl text-4xl font-semibold uppercase leading-[0.95] sm:text-6xl">
@@ -34,17 +35,37 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <div className="flex justify-center lg:justify-end">
-            <div className="border border-line bg-charcoal p-8">
-              <Image
-                src="/logo-lion.png"
-                alt="Circular Rubicon Protection Security roaring lion mark"
-                width={320}
-                height={320}
-                priority
-                className="h-auto w-56 sm:w-72 lg:w-80"
-              />
-            </div>
+          <Photo
+            {...photos.teslaRear}
+            fit="contain"
+            priority
+            caption="Marked patrol vehicle. Call 833-217-1117."
+            sizes="(min-width: 1024px) 42vw, 100vw"
+          />
+        </div>
+      </section>
+
+      <section className="border-b border-line">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+          <p className="kicker">On the job</p>
+          <h2 className="display mt-3 text-3xl font-semibold uppercase sm:text-4xl">
+            Real work, real posts
+          </h2>
+          <p className="mt-4 max-w-3xl text-muted leading-7">
+            These photographs are from Rubicon posts—not stock. Captions name the
+            locations only because they are visible in the frame.
+          </p>
+          <div className="mt-8 grid gap-6 lg:grid-cols-2">
+            <Photo
+              {...photos.cameraInstall}
+              caption="Camera install at AllSaints."
+              sizes="(min-width: 1024px) 50vw, 100vw"
+            />
+            <Photo
+              {...photos.nightPatrol}
+              caption="Night patrol at Ashley Furniture Warehouse."
+              sizes="(min-width: 1024px) 50vw, 100vw"
+            />
           </div>
         </div>
       </section>
@@ -105,6 +126,33 @@ export default function HomePage() {
                 </span>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-line">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+          <p className="kicker">Fleet</p>
+          <h2 className="display mt-3 text-3xl font-semibold uppercase sm:text-4xl">
+            Marked patrol vehicles
+          </h2>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <Photo
+              {...photos.teslaRear}
+              fit="contain"
+              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+            />
+            <Photo
+              {...photos.ioniqFront}
+              fit="contain"
+              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+            />
+            <Photo
+              {...photos.teslaSide}
+              fit="contain"
+              className="sm:col-span-2 lg:col-span-1"
+              sizes="(min-width: 1024px) 33vw, 100vw"
+            />
           </div>
         </div>
       </section>
