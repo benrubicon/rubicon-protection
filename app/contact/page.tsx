@@ -51,6 +51,12 @@ export default function ContactPage() {
           className="mt-10"
           sizes="(min-width: 1024px) 38vw, 100vw"
         />
+        <Photo
+          {...photos.suitedPost}
+          caption="Suited post inside AllSaints."
+          className="mt-6"
+          sizes="(min-width: 1024px) 38vw, 100vw"
+        />
       </div>
       <QuoteForm />
     </section>

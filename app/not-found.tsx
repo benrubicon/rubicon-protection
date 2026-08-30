@@ -13,8 +13,8 @@ export default function NotFound() {
         Page not found
       </h1>
       <p className="mt-4 max-w-xl text-muted">
-        That URL is not on this site. Use the navigation for Home, Executive
-        Protection, Event Security, Security Guards, or Contact.
+        That URL is not on this site. Use the navigation for Home, Services,
+        Industries, or Contact.
       </p>
       <Link
         href="/"

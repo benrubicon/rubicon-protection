@@ -1,8 +1,10 @@
+import Image from "next/image";
 import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
 import { HeroReel } from "@/components/HeroReel";
 import { NationwideBand } from "@/components/NationwideBand";
 import { Photo } from "@/components/Photo";
+import { industries } from "@/lib/industries";
 import { photos } from "@/lib/photos";
 import { services } from "@/lib/site";
 
@@ -71,9 +73,9 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
           <p className="kicker">Services</p>
           <h2 className="display mt-3 text-3xl font-semibold uppercase sm:text-4xl">
-            Three lines of coverage
+            How we cover the work
           </h2>
-          <div className="mt-8 grid gap-4 lg:grid-cols-3">
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {services.map((service, index) => (
               <Link
                 key={service.href}
@@ -93,6 +95,46 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="border-b border-line">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+          <p className="kicker">Industries</p>
+          <h2 className="display mt-3 text-3xl font-semibold uppercase sm:text-4xl">
+            Coverage by site type
+          </h2>
+          <p className="mt-4 max-w-3xl leading-7 text-muted">
+            Construction through international. Each industry page has real copy
+            and photography. Stock images are labeled as generic industry
+            photography—not Rubicon posts.
+          </p>
+          <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+            {industries.map((industry) => {
+              const hero = industry.photos[0];
+              return (
+                <li key={industry.href}>
+                  <Link
+                    href={industry.href}
+                    className="flex h-full flex-col border border-line bg-charcoal hover:border-white"
+                  >
+                    <figure className="relative aspect-[16/10] overflow-hidden border-b border-line">
+                      <Image
+                        src={hero.src}
+                        alt={hero.alt}
+                        fill
+                        sizes="(min-width: 1024px) 20vw, (min-width: 640px) 50vw, 100vw"
+                        className="object-cover"
+                      />
+                    </figure>
+                    <span className="display p-3 text-sm font-semibold uppercase">
+                      {industry.title}
+                    </span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </section>
 

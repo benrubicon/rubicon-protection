@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
 import { Photo } from "@/components/Photo";
-import { photos } from "@/lib/photos";
+import { stock, STOCK_CAPTION } from "@/lib/photos";
 import { nationwide } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -25,6 +26,13 @@ export default function EventSecurityPage() {
             the line into a fight. Rubicon plans, staffs, and runs events of any
             size.
           </p>
+          <p className="mt-4 max-w-3xl text-sm leading-7 text-muted">
+            Industry view:{" "}
+            <Link className="text-white underline" href="/industries/concerts-venues">
+              Concerts and large venues
+            </Link>
+            .
+          </p>
         </div>
       </section>
 
@@ -32,13 +40,14 @@ export default function EventSecurityPage() {
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
           <div className="grid gap-6 lg:grid-cols-2">
             <Photo
-              {...photos.suitedPost}
-              caption="Suited post inside AllSaints."
+              {...stock.concertStage}
+              caption={STOCK_CAPTION}
+              priority
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
             <Photo
-              {...photos.nightPatrol}
-              caption="Night patrol at Ashley Furniture Warehouse."
+              {...stock.concertCrowd}
+              caption={STOCK_CAPTION}
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
           </div>

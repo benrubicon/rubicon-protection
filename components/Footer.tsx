@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { industries } from "@/lib/industries";
 import { photos } from "@/lib/photos";
-import { nav, site } from "@/lib/site";
+import { serviceNav, site } from "@/lib/site";
 
 export function Footer() {
   return (
     <footer className="mt-auto border-t border-line bg-charcoal">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3">
+      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-3">
             <Image
@@ -54,12 +55,30 @@ export function Footer() {
         </div>
 
         <div>
-          <p className="kicker">Pages</p>
+          <p className="kicker">Services</p>
           <ul className="mt-3 space-y-2 text-sm">
-            {nav.map((item) => (
+            {serviceNav.map((item) => (
               <li key={item.href}>
                 <Link className="text-white hover:underline" href={item.href}>
                   {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <p className="kicker">Industries</p>
+          <ul className="mt-3 space-y-2 text-sm">
+            <li>
+              <Link className="text-white hover:underline" href="/industries">
+                All industries
+              </Link>
+            </li>
+            {industries.map((item) => (
+              <li key={item.href}>
+                <Link className="text-white hover:underline" href={item.href}>
+                  {item.title}
                 </Link>
               </li>
             ))}

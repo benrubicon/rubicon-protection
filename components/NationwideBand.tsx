@@ -1,11 +1,14 @@
 import { nationwide } from "@/lib/site";
+import Link from "next/link";
 
 export function NationwideBand({
   title = nationwide.title,
   body = nationwide.body,
+  showLink = true,
 }: {
   title?: string;
   body?: string;
+  showLink?: boolean;
 }) {
   return (
     <section className="border-b border-line bg-charcoal">
@@ -15,6 +18,14 @@ export function NationwideBand({
           {title}
         </h2>
         <p className="mt-4 max-w-3xl leading-7 text-muted">{body}</p>
+        {showLink ? (
+          <Link
+            href="/national-accounts"
+            className="mt-6 inline-block text-sm font-semibold uppercase tracking-[0.14em] text-white hover:underline"
+          >
+            National accounts
+          </Link>
+        ) : null}
       </div>
     </section>
   );
