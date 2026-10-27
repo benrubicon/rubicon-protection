@@ -12,18 +12,6 @@ export const photos = {
     height: 682,
     alt: "Security officer in a black branded polo, black cap, and khaki trousers",
   },
-  cameraInstall: {
-    src: "/rubicon-brand-photos/photo-camera-install-allsaints.jpg",
-    width: 832,
-    height: 1248,
-    alt: "Officer installing a ceiling camera in a retail store",
-  },
-  nightPatrol: {
-    src: "/rubicon-brand-photos/photo-night-patrol-ashley.jpg",
-    width: 848,
-    height: 987,
-    alt: "Night warehouse patrol",
-  },
   suitedPost: {
     src: "/rubicon-brand-photos/photo-allsaints-suited-post.jpg",
     width: 1168,

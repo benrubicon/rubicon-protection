@@ -15,12 +15,12 @@ export default function EventSecurityPage() {
   return (
     <>
       <section className="border-b border-line">
-        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:py-20">
+        <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:py-10">
           <p className="kicker">Venues and crowds</p>
-          <h1 className="display mt-3 max-w-4xl text-4xl font-semibold uppercase leading-[0.95] sm:text-6xl">
+          <h1 className="display mt-3 max-w-4xl text-3xl font-semibold uppercase leading-[0.95] sm:text-5xl">
             Event Security
           </h1>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-muted">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-muted sm:text-lg sm:leading-8">
             A successful event—concert, graduation, or convention—starts with
             proper screening and people who can run a checkpoint without turning
             the line into a fight. Rubicon plans, staffs, and runs events of any
@@ -42,10 +42,12 @@ export default function EventSecurityPage() {
             <Photo
               {...stock.concertStage}
               priority
+              crop="inline"
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
             <Photo
               {...stock.concertCrowd}
+              crop="inline"
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
           </div>

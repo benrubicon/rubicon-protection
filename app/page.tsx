@@ -17,28 +17,6 @@ export default function HomePage() {
 
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-          <p className="kicker">On the job</p>
-          <h2 className="display mt-3 text-3xl font-semibold uppercase sm:text-4xl">
-            Real work, real posts
-          </h2>
-          <p className="mt-4 max-w-3xl text-muted leading-7">
-            These photographs are from Rubicon posts—not stock.
-          </p>
-          <div className="mt-8 grid gap-6 lg:grid-cols-2">
-            <Photo
-              {...photos.cameraInstall}
-              sizes="(min-width: 1024px) 50vw, 100vw"
-            />
-            <Photo
-              {...photos.nightPatrol}
-              sizes="(min-width: 1024px) 50vw, 100vw"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="border-b border-line">
-        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
           <p className="kicker">Service specialties</p>
           <h2 className="display mt-3 text-3xl font-semibold uppercase sm:text-4xl">
             Built for commercial clients

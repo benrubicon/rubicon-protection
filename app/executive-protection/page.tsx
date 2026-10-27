@@ -13,13 +13,13 @@ export default function ExecutiveProtectionPage() {
   return (
     <>
       <section className="border-b border-line">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:py-20">
+        <div className="mx-auto grid max-w-6xl items-center gap-6 px-4 py-8 sm:px-6 lg:grid-cols-[1.35fr_1fr] lg:gap-10 lg:py-10">
           <div>
             <p className="kicker">Close protection</p>
-            <h1 className="display mt-3 text-4xl font-semibold uppercase leading-[0.95] sm:text-6xl">
+            <h1 className="display mt-3 text-3xl font-semibold uppercase leading-[0.95] sm:text-5xl">
               Executive Protection
             </h1>
-            <p className="mt-6 text-lg leading-8 text-muted">
+            <p className="mt-4 text-base leading-7 text-muted sm:text-lg sm:leading-8">
               Rubicon fields protection details of any size so coverage matches a
               busy schedule—not the other way around. We safeguard home, business,
               vehicles, family, and travel. The work is quiet, planned, and built
@@ -29,6 +29,7 @@ export default function ExecutiveProtectionPage() {
           <Photo
             {...photos.epWalk}
             priority
+            crop="hero"
             sizes="(min-width: 1024px) 42vw, 100vw"
           />
         </div>
@@ -66,7 +67,8 @@ export default function ExecutiveProtectionPage() {
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2">
           <Photo
             {...photos.epExit}
-            sizes="(min-width: 1024px) 42vw, 100vw"
+            crop="inline"
+              sizes="(min-width: 1024px) 42vw, 100vw"
           />
           <div>
             <p className="kicker">Movements</p>

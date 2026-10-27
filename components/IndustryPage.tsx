@@ -11,17 +11,18 @@ export function IndustryPage({ industry }: { industry: Industry }) {
   return (
     <>
       <section className="border-b border-line">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:py-20">
+        <div className="mx-auto grid max-w-6xl items-center gap-6 px-4 py-8 sm:px-6 lg:grid-cols-[1.35fr_1fr] lg:gap-10 lg:py-10">
           <div>
             <p className="kicker">{industry.kicker}</p>
-            <h1 className="display mt-3 text-4xl font-semibold uppercase leading-[0.95] sm:text-6xl">
+            <h1 className="display mt-3 text-3xl font-semibold uppercase leading-[0.95] sm:text-5xl">
               {industry.title}
             </h1>
-            <p className="mt-6 text-lg leading-8 text-muted">{industry.lede}</p>
+            <p className="mt-4 text-base leading-7 text-muted sm:text-lg sm:leading-8">{industry.lede}</p>
           </div>
           <Photo
             {...hero}
             priority
+            crop="hero"
             sizes="(min-width: 1024px) 42vw, 100vw"
           />
         </div>
@@ -49,6 +50,7 @@ export function IndustryPage({ industry }: { industry: Industry }) {
         </div>
       </section>
 
+      {rest.length > 0 && (
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
           <div className={`grid gap-6 ${rest.length > 1 ? "lg:grid-cols-2" : ""}`}>
@@ -56,12 +58,14 @@ export function IndustryPage({ industry }: { industry: Industry }) {
               <Photo
                 key={photo.src}
                 {...photo}
-                sizes="(min-width: 1024px) 50vw, 100vw"
+                crop="inline"
+              sizes="(min-width: 1024px) 50vw, 100vw"
               />
             ))}
           </div>
         </div>
       </section>
+      )}
 
       <section>
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">

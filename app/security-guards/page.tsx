@@ -14,13 +14,13 @@ export default function SecurityGuardsPage() {
   return (
     <>
       <section className="border-b border-line">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:py-20">
+        <div className="mx-auto grid max-w-6xl items-center gap-6 px-4 py-8 sm:px-6 lg:grid-cols-[1.35fr_1fr] lg:gap-10 lg:py-10">
           <div>
             <p className="kicker">Uniformed posts</p>
-            <h1 className="display mt-3 text-4xl font-semibold uppercase leading-[0.95] sm:text-6xl">
+            <h1 className="display mt-3 text-3xl font-semibold uppercase leading-[0.95] sm:text-5xl">
               Security Guards
             </h1>
-            <p className="mt-6 text-lg leading-8 text-muted">
+            <p className="mt-4 text-base leading-7 text-muted sm:text-lg sm:leading-8">
               Rubicon provides uniformed security guards, armed and unarmed, for
               businesses and government entities. Officers run checkpoints, office
               entrances, and secure areas of buildings. They check credentials and
@@ -31,6 +31,7 @@ export default function SecurityGuardsPage() {
           <Photo
             {...photos.officer}
             priority
+            crop="hero"
             sizes="(min-width: 1024px) 42vw, 100vw"
           />
         </div>
@@ -74,10 +75,7 @@ export default function SecurityGuardsPage() {
           <div className="mt-8 grid gap-6 lg:grid-cols-2">
             <Photo
               {...photos.suitedPost}
-              sizes="(min-width: 1024px) 50vw, 100vw"
-            />
-            <Photo
-              {...photos.cameraInstall}
+              crop="inline"
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
           </div>
@@ -85,11 +83,7 @@ export default function SecurityGuardsPage() {
       </section>
 
       <section className="border-b border-line">
-        <div className="mx-auto grid max-w-6xl items-start gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2">
-          <Photo
-            {...photos.nightPatrol}
-            sizes="(min-width: 1024px) 50vw, 100vw"
-          />
+        <div className="mx-auto grid max-w-6xl items-start gap-10 px-4 py-14 sm:px-6">
           <div className="grid gap-10">
             <article>
               <h2 className="display text-3xl font-semibold uppercase">

@@ -49,12 +49,14 @@ export default function ContactPage() {
         <Photo
           {...photos.officer}
           className="mt-10"
-          sizes="(min-width: 1024px) 38vw, 100vw"
+          crop="inline"
+              sizes="(min-width: 1024px) 38vw, 100vw"
         />
         <Photo
           {...photos.suitedPost}
           className="mt-6"
-          sizes="(min-width: 1024px) 38vw, 100vw"
+          crop="inline"
+              sizes="(min-width: 1024px) 38vw, 100vw"
         />
       </div>
       <QuoteForm />

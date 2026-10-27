@@ -141,7 +141,7 @@ export const industries: Industry[] = [
         body: "Where a site needs cameras or related work on the floor, we treat it as part of protecting the store—not as a separate theater.",
       },
     ],
-    photos: [photos.suitedPost, photos.cameraInstall],
+    photos: [photos.suitedPost],
   },
   {
     slug: "warehouses",
@@ -171,7 +171,7 @@ export const industries: Industry[] = [
         body: "Unauthorized camping and loitering on private industrial property is handled firmly and without turning people into a photo opportunity.",
       },
     ],
-    photos: [photos.nightPatrol, stock.warehouseInterior],
+    photos: [stock.warehouseInterior],
   },
   {
     slug: "healthcare",
