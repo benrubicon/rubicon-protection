@@ -1,8 +1,20 @@
 import { CtaBand } from "@/components/CtaBand";
+import { IndustryVideo } from "@/components/IndustryVideo";
 import { Photo } from "@/components/Photo";
 import type { Industry } from "@/lib/industries";
 import { industries } from "@/lib/industries";
 import Link from "next/link";
+
+// Industries that have a video in public/video/industries. Add a slug when its clip is added.
+const videoSlugs = [
+  "construction",
+  "office-buildings",
+  "parking-garages",
+  "retail",
+  "warehouses",
+  "healthcare",
+  "casinos",
+];
 
 export function IndustryPage({ industry }: { industry: Industry }) {
   const [hero, ...rest] = industry.photos;
@@ -27,6 +39,8 @@ export function IndustryPage({ industry }: { industry: Industry }) {
           />
         </div>
       </section>
+
+      {videoSlugs.includes(industry.slug) && <IndustryVideo slug={industry.slug} />}
 
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
