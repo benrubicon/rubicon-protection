@@ -11,6 +11,8 @@ type PhotoProps = {
   className?: string;
   /** Fixed-crop frame so tall photos take less space. */
   crop?: "hero" | "inline";
+  /** Tailwind object-position class used with crop. */
+  focus?: string;
 };
 
 export function Photo({
@@ -23,6 +25,7 @@ export function Photo({
   sizes = "(min-width: 1024px) 50vw, 100vw",
   className = "",
   crop,
+  focus = "object-top",
 }: PhotoProps) {
   const cropFrame =
     crop === "hero"
@@ -41,7 +44,7 @@ export function Photo({
         height={height}
         priority={priority}
         sizes={sizes}
-        className={`w-full ${crop ? "h-full object-cover object-top" : "h-auto"} ${
+        className={`w-full ${crop ? `h-full object-cover ${focus}` : "h-auto"} ${
           !crop && fit === "contain" ? "object-contain" : !crop ? "object-cover" : ""
         }`}
       />

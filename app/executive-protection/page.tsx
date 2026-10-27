@@ -30,6 +30,7 @@ export default function ExecutiveProtectionPage() {
             {...photos.epWalk}
             priority
             crop="hero"
+            focus="object-[50%_78%]"
             sizes="(min-width: 1024px) 42vw, 100vw"
           />
         </div>
@@ -68,6 +69,7 @@ export default function ExecutiveProtectionPage() {
           <Photo
             {...photos.epExit}
             crop="inline"
+              focus="object-[50%_35%]"
               sizes="(min-width: 1024px) 42vw, 100vw"
           />
           <div>
