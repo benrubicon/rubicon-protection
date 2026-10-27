@@ -61,7 +61,7 @@ export function QuoteForm() {
   return (
     <form
       onSubmit={onSubmit}
-      className="grid gap-4 border border-line bg-charcoal p-5 sm:p-8"
+      className="panel grid gap-4 p-5 sm:p-8"
       noValidate
     >
       <div className="grid gap-4 sm:grid-cols-2">
@@ -74,7 +74,7 @@ export function QuoteForm() {
               type={field.type}
               required={field.required}
               autoComplete={field.autoComplete}
-              className="border border-line bg-background px-3 py-2.5 text-white"
+              className="field"
             />
           </label>
         ))}
@@ -87,7 +87,7 @@ export function QuoteForm() {
           name="service"
           required
           defaultValue=""
-          className="border border-line bg-background px-3 py-2.5 text-white"
+          className="field"
         >
           <option value="" disabled>
             Select a service
@@ -107,7 +107,7 @@ export function QuoteForm() {
           name="message"
           required
           rows={6}
-          className="border border-line bg-background px-3 py-2.5 text-white"
+          className="field"
           placeholder="Site type, dates, headcount, armed or unarmed, and any travel needs."
         />
       </label>
@@ -134,7 +134,7 @@ export function QuoteForm() {
 
       <button
         type="submit"
-        className="inline-flex w-full items-center justify-center bg-white px-5 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-black hover:bg-zinc-200 sm:w-auto"
+        className="btn w-full sm:w-auto"
       >
         Send quote request
       </button>

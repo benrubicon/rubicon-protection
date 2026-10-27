@@ -23,7 +23,7 @@ export function Photo({
 }: PhotoProps) {
   return (
     <figure
-      className={`overflow-hidden border border-line bg-charcoal ${className}`}
+      className={`photo-frame ${className}`}
     >
       <Image
         src={src}

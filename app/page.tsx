@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
-import { HeroReel } from "@/components/HeroReel";
+import { CredentialStrip } from "@/components/CredentialStrip";
+import { Hero } from "@/components/Hero";
 import { NationwideBand } from "@/components/NationwideBand";
 import { Photo } from "@/components/Photo";
 import { industries } from "@/lib/industries";
@@ -11,7 +12,8 @@ import { services } from "@/lib/site";
 export default function HomePage() {
   return (
     <>
-      <HeroReel />
+      <Hero />
+      <CredentialStrip />
 
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
@@ -57,7 +59,7 @@ export default function HomePage() {
             ].map((item) => (
               <li
                 key={item}
-                className="border border-line bg-charcoal px-4 py-5 text-sm font-medium"
+                className="panel px-4 py-5 text-sm font-medium"
               >
                 {item}
               </li>
@@ -77,7 +79,7 @@ export default function HomePage() {
               <Link
                 key={service.href}
                 href={service.href}
-                className="flex flex-col border border-line bg-charcoal p-6 hover:border-white"
+                className="panel flex flex-col p-6"
               >
                 <span className="kicker">0{index + 1}</span>
                 <h3 className="display mt-3 text-2xl font-semibold uppercase">
@@ -86,9 +88,7 @@ export default function HomePage() {
                 <p className="mt-3 flex-1 text-sm leading-6 text-muted">
                   {service.summary}
                 </p>
-                <span className="mt-6 text-sm font-semibold uppercase tracking-[0.14em]">
-                  View service
-                </span>
+                <span className="link-more mt-6">View service</span>
               </Link>
             ))}
           </div>
@@ -112,7 +112,7 @@ export default function HomePage() {
                 <li key={industry.href}>
                   <Link
                     href={industry.href}
-                    className="flex h-full flex-col border border-line bg-charcoal hover:border-white"
+                    className="panel flex h-full flex-col"
                   >
                     <figure className="relative aspect-[16/10] overflow-hidden border-b border-line">
                       <Image
@@ -178,15 +178,15 @@ export default function HomePage() {
               by whoever happens to be available that night.
             </p>
             <ul className="space-y-4 text-sm leading-6">
-              <li className="border-l-2 border-white pl-4">
+              <li className="border-l border-accent pl-4">
                 Armed and unarmed uniformed guards for businesses and government
                 sites.
               </li>
-              <li className="border-l-2 border-white pl-4">
+              <li className="border-l border-accent pl-4">
                 Executive protection professionals able to work worldwide, with
                 insurance that covers those operations.
               </li>
-              <li className="border-l-2 border-white pl-4">
+              <li className="border-l border-accent pl-4">
                 Event teams selected through a real interview process—not a
                 staffing agency sending anyone who will show up.
               </li>

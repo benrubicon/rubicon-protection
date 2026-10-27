@@ -50,7 +50,7 @@ export default function SecurityGuardsPage() {
               "After-hours and overnight coverage",
               "Mobile checks of doors, gates, and lots",
             ].map((item) => (
-              <li key={item} className="border border-line bg-charcoal px-4 py-4 text-sm">
+              <li key={item} className="panel px-4 py-4 text-sm">
                 {item}
               </li>
             ))}

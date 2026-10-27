@@ -48,7 +48,7 @@ export default function ExecutiveProtectionPage() {
               level—advance work, static posts, and traveling coverage.
             </p>
           </article>
-          <article className="border border-line bg-charcoal p-6">
+          <article className="panel p-6">
             <h2 className="display text-2xl font-semibold uppercase">Travel</h2>
             <p className="mt-3 leading-7 text-muted">
               We assist with travel planning and logistics and can participate in

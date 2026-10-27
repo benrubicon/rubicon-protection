@@ -68,7 +68,7 @@ export default function NationalAccountsPage() {
                 d: "Appropriate people, for the hours you specify—not a body shop sending whoever is free.",
               },
             ].map((item) => (
-              <li key={item.t} className="border border-line bg-charcoal p-5">
+              <li key={item.t} className="panel p-5">
                 <h3 className="display text-2xl font-semibold uppercase">
                   {item.t}
                 </h3>

@@ -59,7 +59,7 @@ export default function EventSecurityPage() {
 
       <section className="border-b border-line">
         <div className="mx-auto grid max-w-6xl gap-6 px-4 py-14 sm:px-6 lg:grid-cols-3">
-          <article className="border border-line bg-charcoal p-6">
+          <article className="panel p-6">
             <h2 className="display text-2xl font-semibold uppercase">Screening</h2>
             <p className="mt-3 leading-7 text-muted">
               Rubicon has been screening thousands of people every year at major
@@ -69,7 +69,7 @@ export default function EventSecurityPage() {
               the judgment to keep the night moving.
             </p>
           </article>
-          <article className="border border-line bg-charcoal p-6">
+          <article className="panel p-6">
             <h2 className="display text-2xl font-semibold uppercase">
               Good people
             </h2>
@@ -82,7 +82,7 @@ export default function EventSecurityPage() {
               ability to staff with fewer bodies because the crew actually works.
             </p>
           </article>
-          <article className="border border-line bg-charcoal p-6">
+          <article className="panel p-6">
             <h2 className="display text-2xl font-semibold uppercase">
               Large or small
             </h2>
@@ -119,7 +119,7 @@ export default function EventSecurityPage() {
                 d: "Keep the checkpoint fast, the floor orderly, and the client informed.",
               },
             ].map((step) => (
-              <li key={step.n} className="border border-line p-5">
+              <li key={step.n} className="panel p-5">
                 <p className="kicker">{step.n}</p>
                 <h3 className="display mt-2 text-2xl font-semibold uppercase">
                   {step.t}

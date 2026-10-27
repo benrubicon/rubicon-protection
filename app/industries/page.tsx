@@ -34,7 +34,7 @@ export default function IndustriesIndexPage() {
                 <li key={industry.href}>
                   <Link
                     href={industry.href}
-                    className="flex h-full flex-col border border-line bg-charcoal hover:border-white"
+                    className="panel flex h-full flex-col"
                   >
                     <figure className="relative aspect-[16/10] overflow-hidden border-b border-line bg-charcoal">
                       <Image
@@ -53,9 +53,7 @@ export default function IndustriesIndexPage() {
                       <p className="mt-3 flex-1 text-sm leading-6 text-muted">
                         {industry.summary}
                       </p>
-                      <span className="mt-4 text-sm font-semibold uppercase tracking-[0.14em]">
-                        View industry
-                      </span>
+                      <span className="link-more mt-4">View industry</span>
                     </div>
                   </Link>
                 </li>

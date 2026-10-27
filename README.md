@@ -6,9 +6,7 @@ This repository is a greenfield Next.js rebuild. **Do not point `rubiconprotecti
 
 ## Preview
 
-Git-linked Hobby project: `rubicon-protection-ixjs` (separate from valor-care-finder). PR 1 preview:
-
-- https://rubicon-protection-ixjs-git-cursor-mar-b92c86-valor-senior-care.vercel.app
+Git-linked Hobby project: `rubicon-protection-ixjs`.
 
 **DNS:** do not point `rubiconprotection.com` at this project until a cutover is explicitly approved. Do not merge this branch to `main` until a cutover is approved.
 
@@ -59,7 +57,7 @@ Click-to-call: `833-217-1117` (`tel:+18332171117`).
 
 ## Brand rules used in this build
 
-- Palette: black, white, charcoal only
+- Palette: black, white, charcoal, with a thin cyan-teal accent (`#2dd4bf`) for hairlines, glows, and focus states
 - Footer on every page: AZ DPS Security Guard Company #1732763 and Private Investigator #1732762
 - No careers/hiring CTA on the homepage
 - No invented staff bios, street addresses, extra licenses, client logos, testimonials, awards, dollar amounts, or extra named clients
@@ -68,7 +66,7 @@ Click-to-call: `833-217-1117` (`tel:+18332171117`).
 - Brand photographs in `public/rubicon-brand-photos/` are Rubicon posts. Photos have no captions and no client names in alt text. Fleet cutouts sit on dark asphalt. No sidewalk/outreach photo.
 - Licensed stock in `public/stock/` is generic industry photography. No figcaptions. No client names on photographs.
 - National commercial accounts: one call, Rubicon finds coverage and staffs the posts. Copy is on Home, National Accounts, and Security Guards, with a short mention on Event Security.
-- Home hero is a Ken Burns reel of real brand photos. Arizona-based / worldwide EP copy is unchanged.
+- Home hero is a full-bleed video (`public/video/hero.webm`, `public/video/hero.mp4`, poster `public/video/hero-poster.jpg`). No captions. Reduced motion shows the poster only. The video is on the homepage hero only. Arizona-based / worldwide EP copy is unchanged.
 
 ## Stack
 

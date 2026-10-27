@@ -1,11 +1,12 @@
 import Link from "next/link";
+import { CredentialStrip } from "@/components/CredentialStrip";
 import { LogoMark } from "@/components/LogoMark";
 import { industries } from "@/lib/industries";
 import { serviceNav, site } from "@/lib/site";
 
 export function Footer() {
   return (
-    <footer className="mt-auto border-t border-line bg-charcoal">
+    <footer className="site-footer mt-auto border-t border-line bg-charcoal">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-3">
@@ -83,15 +84,9 @@ export function Footer() {
         </div>
       </div>
 
+      <CredentialStrip className="border-t" />
       <div className="border-t border-line">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-6 text-xs leading-5 text-muted sm:px-6 sm:text-sm">
-          <p>
-            {site.licenses.guard}
-            <span className="mx-2 text-line" aria-hidden>
-              |
-            </span>
-            {site.licenses.investigator}
-          </p>
+        <div className="mx-auto max-w-6xl px-4 py-5 text-xs leading-5 text-muted sm:px-6 sm:text-sm">
           <p>
             © {new Date().getFullYear()} {site.legalName}. All rights reserved.
           </p>

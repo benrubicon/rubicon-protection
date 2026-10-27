@@ -38,7 +38,7 @@ export function IndustryPage({ industry }: { industry: Industry }) {
           </div>
           <ul className="mt-10 grid gap-4 sm:grid-cols-3">
             {industry.points.map((point) => (
-              <li key={point.title} className="border border-line bg-charcoal p-5">
+              <li key={point.title} className="panel p-5">
                 <h2 className="display text-2xl font-semibold uppercase">
                   {point.title}
                 </h2>
@@ -71,7 +71,7 @@ export function IndustryPage({ industry }: { industry: Industry }) {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="block border border-line px-4 py-3 text-sm hover:border-white"
+                  className="panel block px-4 py-3 text-sm"
                 >
                   {item.title}
                 </Link>

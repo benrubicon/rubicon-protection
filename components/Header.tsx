@@ -31,9 +31,8 @@ function Menu({
     >
       <button
         type="button"
-        className={`inline-flex items-center gap-1 text-sm tracking-wide ${
-          active ? "text-white" : "text-muted hover:text-white"
-        }`}
+        className="nav-link inline-flex items-center gap-1"
+        data-active={active ? "true" : undefined}
         aria-expanded={open}
         aria-haspopup="true"
         onClick={() => setOpen((value) => !value)}
@@ -44,12 +43,12 @@ function Menu({
         </span>
       </button>
       {open ? (
-        <ul className="absolute left-0 top-full z-50 min-w-56 border border-line bg-background py-2 shadow-lg">
+        <ul className="menu-panel absolute left-0 top-full z-50 min-w-56 py-2">
           {href ? (
             <li>
               <Link
                 href={href}
-                className="block px-4 py-2 text-sm text-white hover:bg-charcoal"
+                className="block px-4 py-2 text-sm text-white hover:bg-white/5"
                 onClick={onNavigate}
               >
                 All {label.toLowerCase()}
@@ -60,7 +59,7 @@ function Menu({
             <li key={item.href}>
               <Link
                 href={item.href}
-                className={`block px-4 py-2 text-sm hover:bg-charcoal ${
+                className={`block px-4 py-2 text-sm hover:bg-white/5 ${
                   pathname === item.href ? "text-white" : "text-muted hover:text-white"
                 }`}
                 onClick={onNavigate}
@@ -84,7 +83,7 @@ export function Header() {
   }));
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-background/95 backdrop-blur">
+    <header className="site-header sticky top-0 z-50">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <Link
           href="/"
@@ -107,15 +106,11 @@ export function Header() {
           </span>
         </Link>
 
-        <nav
-          className="hidden items-center gap-5 xl:flex"
-          aria-label="Primary"
-        >
+        <nav className="hidden items-center gap-6 xl:flex" aria-label="Primary">
           <Link
             href="/"
-            className={`text-sm tracking-wide ${
-              pathname === "/" ? "text-white" : "text-muted hover:text-white"
-            }`}
+            className="nav-link"
+            data-active={pathname === "/" ? "true" : undefined}
             aria-current={pathname === "/" ? "page" : undefined}
           >
             Home
@@ -129,11 +124,8 @@ export function Header() {
           />
           <Link
             href="/contact"
-            className={`text-sm tracking-wide ${
-              pathname.startsWith("/contact")
-                ? "text-white"
-                : "text-muted hover:text-white"
-            }`}
+            className="nav-link"
+            data-active={pathname.startsWith("/contact") ? "true" : undefined}
           >
             Contact
           </Link>
@@ -142,28 +134,25 @@ export function Header() {
         <div className="flex items-center gap-2 sm:gap-3">
           <a
             href={`tel:${site.phoneTel}`}
-            className="hidden text-sm font-semibold text-white sm:inline"
+            className="hidden text-sm font-semibold tracking-wide text-white sm:inline"
           >
             {site.phoneDisplay}
           </a>
-          <Link
-            href="/contact"
-            className="inline-flex items-center bg-white px-3 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-black hover:bg-zinc-200 sm:px-4 sm:text-sm"
-          >
+          <Link href="/contact" className="btn btn-sm">
             Get a Quote
           </Link>
           <button
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center border border-line xl:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center border border-line xl:hidden"
             aria-expanded={open}
             aria-controls="mobile-nav"
             onClick={() => setOpen((value) => !value)}
           >
             <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
             <span aria-hidden className="flex flex-col gap-1.5">
-              <span className="block h-0.5 w-5 bg-white" />
-              <span className="block h-0.5 w-5 bg-white" />
-              <span className="block h-0.5 w-5 bg-white" />
+              <span className="block h-px w-5 bg-white" />
+              <span className="block h-px w-5 bg-white" />
+              <span className="block h-px w-5 bg-white" />
             </span>
           </button>
         </div>
@@ -172,7 +161,7 @@ export function Header() {
       {open ? (
         <nav
           id="mobile-nav"
-          className="max-h-[70vh] overflow-y-auto border-t border-line bg-charcoal px-4 py-4 xl:hidden"
+          className="menu-panel max-h-[70vh] overflow-y-auto border-x-0 border-b-0 px-4 py-4 xl:hidden"
           aria-label="Mobile"
         >
           <ul className="flex flex-col gap-3">
