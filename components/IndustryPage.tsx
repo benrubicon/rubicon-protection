@@ -14,6 +14,9 @@ const videoSlugs = [
   "warehouses",
   "healthcare",
   "casinos",
+  "government",
+  "concerts-venues",
+  "international",
 ];
 
 export function IndustryPage({ industry }: { industry: Industry }) {
