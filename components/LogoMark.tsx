@@ -15,7 +15,7 @@ export function LogoMark({
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src={photos.logo.src}
+      src="/rubicon-brand-photos/logo-lion-360.png"
       alt={photos.logo.alt}
       width={width}
       height={height}

@@ -27,12 +27,21 @@ export function HeroMedia() {
       return;
     }
     video.muted = true;
-    const play = video.play();
-    if (play) {
-      play.catch(() => {
-        /* Autoplay can be blocked; the poster stays visible. */
-      });
-    }
+    // Only decode video while it is on screen; this keeps phone scrolling smooth.
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play()?.catch(() => {
+            /* Autoplay can be blocked; the poster stays visible. */
+          });
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.05 },
+    );
+    observer.observe(video);
+    return () => observer.disconnect();
   }, [reducedMotion]);
 
   return (
