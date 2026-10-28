@@ -19,9 +19,8 @@ export default function ContactPage() {
           Get a Quote
         </h1>
         <p className="mt-5 leading-7 text-muted">
-          Tell us what you need covered. A name-and-email form is not enough for
-          a real security quote, so this path asks for the service line, a phone
-          number, and the details of the job.
+          Tell us what you need covered. Include the service, a phone number, and
+          the details of the job so we can quote it accurately.
         </p>
         <ul className="mt-8 space-y-4 text-sm">
           <li>

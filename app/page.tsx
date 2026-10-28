@@ -24,9 +24,9 @@ export default function HomePage() {
           <p className="mt-4 max-w-3xl text-muted leading-7">
             We provide security for large events and concerts, tribal casinos, and
             businesses of every kind. Executive protection covers celebrities,
-            top-tier athletes, and high-net-worth individuals. The resume is the
-            people: trained, experienced, and ready to assist a client who cannot
-            afford a weak post.
+            top-tier athletes, and high-net-worth individuals. Our strength is our
+            people: trained, experienced, and ready to support a client who
+            cannot afford a weak post.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
@@ -80,8 +80,8 @@ export default function HomePage() {
             Coverage by site type
           </h2>
           <p className="mt-4 max-w-3xl leading-7 text-muted">
-            Construction through international. Each industry page has real copy
-            and photography.
+            From construction sites to international programs, each industry page
+            explains how we staff that kind of work.
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
             {industries.map((industry) => {

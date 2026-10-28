@@ -94,8 +94,7 @@ export default function SecurityGuardsPage() {
                 the effect of unauthorized camping and loitering on private
                 property. The approach is firm and compassionate: protect the rights
                 of owners and their customers, keep the site usable, and handle
-                people as people—not as a photo opportunity. We do not use
-                exploitative images of that work.
+                people with respect.
               </p>
             </article>
             <article>
@@ -121,8 +120,7 @@ export default function SecurityGuardsPage() {
             Mobile patrol
           </h2>
           <p className="mt-4 max-w-3xl leading-7 text-muted">
-            If you need a quote, tell us the location type, hours, and whether the
-            post is standing, roaming, or a mix.
+            Marked patrol vehicles support roaming checks of doors, gates, and lots. If you need a quote, tell us the location type, hours, and whether the post is standing, roaming, or a mix.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <Photo

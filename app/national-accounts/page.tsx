@@ -49,8 +49,7 @@ export default function NationalAccountsPage() {
               staff the posts.
             </p>
             <p className="leading-7 text-muted">
-              The photographs on this page are from Rubicon posts. If you need a
-              quote, tell us how many sites, what kind of post, and whether
+              If you need a quote, tell us how many sites, what kind of post, and whether
               coverage is armed or unarmed.
             </p>
           </div>

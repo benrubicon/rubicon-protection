@@ -100,7 +100,7 @@ export function IndustryPage({ industry }: { industry: Industry }) {
       </section>
 
       <CtaBand
-        title={`Cover ${industry.title.toLowerCase()}`}
+        title={`Request coverage: ${industry.title}`}
         body="Tell us the site, the hours, and whether you need a standing post, a roaming check, or a full event crew."
       />
     </>

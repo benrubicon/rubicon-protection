@@ -3,7 +3,6 @@ import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
 import { Photo } from "@/components/Photo";
 import { stock } from "@/lib/photos";
-import { nationwide } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Event Security",
@@ -52,7 +51,7 @@ export default function EventSecurityPage() {
             />
           </div>
           <p className="mt-8 max-w-3xl text-sm leading-7 text-muted">
-            {nationwide.kicker}. Companies with many locations can call Rubicon
+            Companies with many locations can call Rubicon
             once for coverage instead of hiring locally at each site. One
             contract, many posts.
           </p>
@@ -92,7 +91,7 @@ export default function EventSecurityPage() {
               Whether it is 18,000 people at an open-air amphitheater or 100 at a
               wedding, we have secured events, concerts, and conventions across
               that range. Rubicon will help plan, staff, and run the venue you
-              have—not a template that only fits arena nights.
+              have—not a template that only fits large arenas.
             </p>
           </article>
         </div>
@@ -101,7 +100,7 @@ export default function EventSecurityPage() {
       <section>
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
           <h2 className="display text-3xl font-semibold uppercase">
-            How we work a date
+            How we run an event
           </h2>
           <ol className="mt-8 grid gap-4 sm:grid-cols-3">
             {[

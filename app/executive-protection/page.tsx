@@ -23,7 +23,7 @@ export default function ExecutiveProtectionPage() {
               Rubicon fields protection details of any size so coverage matches a
               busy schedule—not the other way around. We safeguard home, business,
               vehicles, family, and travel. The work is quiet, planned, and built
-              for principals who need professionals, not theater.
+              for principals who need experienced professionals, not a show.
             </p>
           </div>
           <Photo
@@ -80,7 +80,7 @@ export default function ExecutiveProtectionPage() {
             <p className="mt-4 leading-7 text-muted">
               Vehicle work is part of the detail: holding doors, scanning the
               approach, and keeping the principal moving. Coverage is sized to the
-              schedule, not staged for a photograph.
+              schedule, with no display for show.
             </p>
           </div>
         </div>

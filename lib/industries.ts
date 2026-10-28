@@ -35,7 +35,7 @@ export const industries: Industry[] = [
       },
       {
         title: "After hours",
-        body: "When crews leave, the site still needs a body who will walk the fence, check connex boxes, and call out what changed.",
+        body: "When crews leave, the site still needs a body who will walk the fence, check storage containers, and call out what changed.",
       },
       {
         title: "Materials",
@@ -56,9 +56,9 @@ export const industries: Industry[] = [
       "Reception control, after-hours floors, and visitor handling for offices that cannot run on an unlocked door.",
     metaDescription:
       "Office building security: lobby control, after-hours coverage, and visitor verification. Rubicon Protection, 833-217-1117.",
-    lede: "An office building fails at the lobby first. If anyone can walk to a floor, the rest of the program is theater.",
+    lede: "An office building fails at the lobby first. If anyone can walk up to a floor, the rest of the security program does not matter.",
     paragraphs: [
-      "Rubicon provides uniformed officers for office entrances, secure floors, and after-hours coverage. Officers check credentials, run visitor processes, and keep unauthorized people out of the spaces you actually need protected—the same work described on our security-guards line, sized to a commercial tower or campus.",
+      "Rubicon provides uniformed officers for office entrances, secure floors, and after-hours coverage. Officers check credentials, run visitor processes, and keep unauthorized people out of the spaces you actually need protected—the same work described on our Security Guards page, sized to a commercial tower or campus.",
       "After 6 p.m. the building changes. Cleaning crews, late employees, and people who should not be there all look similar from a desk that is already empty. We staff that window on purpose.",
     ],
     points: [
@@ -92,7 +92,7 @@ export const industries: Industry[] = [
     lede: "A garage is a building with cars in it: poor sightlines, stair towers, pay machines, and long hours with nobody watching the ramps.",
     paragraphs: [
       "Rubicon covers parking structures with standing posts, mobile checks, or both. The work is concrete and unglamorous: walk the levels, check stairwells, watch the entrance, and be visible enough that a break-in is not the easy option.",
-      "If the garage sits under an office, a hospital, a casino, or a retail center, we staff it as part of that site—not as a separate mystery contract. One call still applies when the same company owns decks in more than one city.",
+      "If the garage sits under an office, a hospital, a casino, or a retail center, we staff it as part of that site—not as a separate contract. One call still applies when the same company owns decks in more than one city.",
     ],
     points: [
       {
@@ -137,8 +137,8 @@ export const industries: Industry[] = [
         body: "One contract, many sites. The company does not run a hiring process in every city.",
       },
       {
-        title: "Technical work",
-        body: "Where a site needs cameras or related work on the floor, we treat it as part of protecting the store—not as a separate theater.",
+        title: "Cameras and equipment",
+        body: "Where a store needs camera or equipment work done on the floor, we treat it as part of protecting the store, not as a separate job.",
       },
     ],
     photos: [photos.suitedPost],
@@ -168,7 +168,7 @@ export const industries: Industry[] = [
       },
       {
         title: "Property",
-        body: "Unauthorized camping and loitering on private industrial property is handled firmly and without turning people into a photo opportunity.",
+        body: "Unauthorized camping and loitering on private industrial property is handled firmly and respectfully.",
       },
     ],
     photos: [stock.warehouseInterior],
@@ -256,7 +256,7 @@ export const industries: Industry[] = [
     points: [
       {
         title: "Checkpoints",
-        body: "Vehicle and pedestrian control that matches the building’s rules, not a generic airport script.",
+        body: "Vehicle and pedestrian control that matches the building’s rules, not a generic one-size-fits-all procedure.",
       },
       {
         title: "Credentials",
@@ -278,13 +278,13 @@ export const industries: Industry[] = [
     title: "Concerts and large venues",
     kicker: "Doors and crowds",
     summary:
-      "Screening and floor coverage for concerts, graduations, and conventions—from 100-person dates to 18,000-person amphitheaters.",
+      "Screening and floor coverage for concerts, graduations, and conventions—from 100-person events to 18,000-person amphitheaters.",
     metaDescription:
       "Concert and large-venue security: screening, floor, and run-of-show staffing since 2016. Rubicon Protection, 833-217-1117.",
     lede: "A successful night starts at the checkpoint. If the line becomes a fight, the rest of the show is already behind.",
     paragraphs: [
       "Rubicon has been screening thousands of people every year at major music venues and casinos. Moving patrons through a checkpoint quickly is a skill that is not easily learned. With years on those doors, we have it down: bags, credentials, prohibited items, and the judgment to keep the night moving.",
-      "We have been staffing and securing concerts for major artists since 2016. We are not a staffing agency hiring anyone who will show up. The interview process is selective. Event Security is the service line; this page is the industry view of the same work.",
+      "We have been staffing and securing concerts for major artists since 2016. We are not a staffing agency hiring anyone who will show up. The interview process is selective. This is the same work described on our Event Security page.",
     ],
     points: [
       {
