@@ -12,10 +12,10 @@ function prefersReducedMotion() {
   return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 }
 
-export function IndustryVideo({ slug }: { slug: string }) {
+export function IndustryVideo({ slug, dir = "industries" }: { slug: string; dir?: string }) {
   const reducedMotion = useSyncExternalStore(subscribe, prefersReducedMotion, () => true);
   const ref = useRef<HTMLVideoElement>(null);
-  const base = `/video/industries/${slug}`;
+  const base = `/video/${dir}/${slug}`;
 
   useEffect(() => {
     const video = ref.current;

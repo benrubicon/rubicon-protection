@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { CtaBand } from "@/components/CtaBand";
+import { IndustryVideo } from "@/components/IndustryVideo";
 import { NationwideBand } from "@/components/NationwideBand";
 import { Photo } from "@/components/Photo";
 import { photos } from "@/lib/photos";
@@ -36,6 +37,8 @@ export default function SecurityGuardsPage() {
           />
         </div>
       </section>
+
+      <IndustryVideo slug="security-guards" dir="services" />
 
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">

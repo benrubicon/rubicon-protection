@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { CtaBand } from "@/components/CtaBand";
+import { IndustryVideo } from "@/components/IndustryVideo";
 import { NationwideBand } from "@/components/NationwideBand";
 import { Photo } from "@/components/Photo";
 import { photos } from "@/lib/photos";
@@ -32,6 +33,8 @@ export default function NationalAccountsPage() {
           />
         </div>
       </section>
+
+      <IndustryVideo slug="national-accounts" dir="services" />
 
       <NationwideBand showLink={false} />
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
+import { IndustryVideo } from "@/components/IndustryVideo";
 import { Photo } from "@/components/Photo";
 import { stock } from "@/lib/photos";
 
@@ -34,6 +35,8 @@ export default function EventSecurityPage() {
           </p>
         </div>
       </section>
+
+      <IndustryVideo slug="event-security" dir="services" />
 
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">

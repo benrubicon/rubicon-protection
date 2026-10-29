@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { CtaBand } from "@/components/CtaBand";
+import { IndustryVideo } from "@/components/IndustryVideo";
 import { Photo } from "@/components/Photo";
 import { photos } from "@/lib/photos";
 
@@ -35,6 +36,8 @@ export default function ExecutiveProtectionPage() {
           />
         </div>
       </section>
+
+      <IndustryVideo slug="executive-protection" dir="services" />
 
       <section className="border-b border-line">
         <div className="mx-auto grid max-w-6xl items-start gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2">
