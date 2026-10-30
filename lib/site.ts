@@ -22,6 +22,7 @@ export const serviceNav = [
   { href: "/event-security", label: "Event Security" },
   { href: "/security-guards", label: "Security Guards" },
   { href: "/national-accounts", label: "National Accounts" },
+  { href: "/rentals", label: "Jet & Yacht Rentals" },
 ] as const;
 
 export const services = [
@@ -56,5 +57,6 @@ export const serviceOptions = [
   "Event Security",
   "Security Guards",
   "National Accounts",
+  "Jet & Yacht Rentals",
   "Other",
 ] as const;
