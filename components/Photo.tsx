@@ -35,7 +35,7 @@ export function Photo({
         : "";
   return (
     <figure
-      className={`photo-frame ${cropFrame} ${className}`}
+      className={`photo-frame max-sm:hidden ${cropFrame} ${className}`}
     >
       <Image
         src={src}

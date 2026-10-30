@@ -72,7 +72,7 @@ export function IndustryPage({ industry }: { industry: Industry }) {
       </section>
 
       {gallery.length > 0 && (
-      <section className="border-b border-line">
+      <section className="border-b border-line max-sm:hidden">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
           <div className={`grid gap-6 ${gallery.length > 1 ? "lg:grid-cols-2" : ""}`}>
             {gallery.map((photo) => (

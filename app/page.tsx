@@ -92,7 +92,7 @@ export default function HomePage() {
                     href={industry.href}
                     className="panel flex h-full flex-col"
                   >
-                    <figure className="relative aspect-[16/10] overflow-hidden border-b border-line">
+                    <figure className="relative max-sm:hidden aspect-[16/10] overflow-hidden border-b border-line">
                       <Image
                         src={hero.src}
                         alt={hero.alt}
