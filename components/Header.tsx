@@ -138,7 +138,7 @@ export function Header() {
           >
             {site.phoneDisplay}
           </a>
-          <Link href="/contact" className="btn btn-sm">
+          <Link href="/contact" className="btn btn-sm shrink-0 whitespace-nowrap text-center">
             Get a Quote
           </Link>
           <button

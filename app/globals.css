@@ -203,6 +203,9 @@ body {
   padding: 0.7rem 0.9rem;
   font-size: 0.68rem;
   letter-spacing: 0.14em;
+  text-align: center;
+  /* letter-spacing adds trailing space after the last letter; offset it so the label looks centered */
+  padding-right: calc(0.9rem - 0.14em);
 }
 
 .btn-line {
