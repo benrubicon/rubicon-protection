@@ -13,8 +13,9 @@ export const metadata: Metadata = {
 export default function ExecutiveProtectionPage() {
   return (
     <>
+      <IndustryVideo slug="executive-protection" dir="services" />
       <section className="border-b border-line">
-        <div className="mx-auto grid max-w-6xl items-center gap-6 px-4 py-8 sm:px-6 lg:grid-cols-[1.35fr_1fr] lg:gap-10 lg:py-10">
+        <div className="mx-auto grid max-w-6xl items-center gap-6 px-4 py-8 sm:px-6 lg:gap-10 lg:py-10">
           <div>
             <p className="kicker">Close protection</p>
             <h1 className="display mt-3 text-3xl font-semibold uppercase leading-[0.95] sm:text-5xl">
@@ -27,17 +28,19 @@ export default function ExecutiveProtectionPage() {
               for principals who need experienced professionals, not a show.
             </p>
           </div>
-          <Photo
-            {...photos.epWalk}
-            priority
-            crop="hero"
-            focus="object-[50%_78%]"
-            sizes="(min-width: 1024px) 42vw, 100vw"
-          />
         </div>
       </section>
 
-      <IndustryVideo slug="executive-protection" dir="services" />
+      <section className="border-b border-line">
+        <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+          <Photo
+            {...photos.epWalk}
+            crop="hero"
+            focus="object-[50%_78%]"
+            sizes="(min-width: 1024px) 42vw, 100vw"
+            />
+        </div>
+      </section>
 
       <section className="border-b border-line">
         <div className="mx-auto grid max-w-6xl items-start gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2">

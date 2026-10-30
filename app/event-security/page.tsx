@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 export default function EventSecurityPage() {
   return (
     <>
+      <IndustryVideo slug="event-security" dir="services" />
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:py-10">
           <p className="kicker">Venues and crowds</p>
@@ -35,8 +36,6 @@ export default function EventSecurityPage() {
           </p>
         </div>
       </section>
-
-      <IndustryVideo slug="event-security" dir="services" />
 
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">

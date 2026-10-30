@@ -14,8 +14,9 @@ export const metadata: Metadata = {
 export default function SecurityGuardsPage() {
   return (
     <>
+      <IndustryVideo slug="security-guards" dir="services" />
       <section className="border-b border-line">
-        <div className="mx-auto grid max-w-6xl items-center gap-6 px-4 py-8 sm:px-6 lg:grid-cols-[1.35fr_1fr] lg:gap-10 lg:py-10">
+        <div className="mx-auto grid max-w-6xl items-center gap-6 px-4 py-8 sm:px-6 lg:gap-10 lg:py-10">
           <div>
             <p className="kicker">Uniformed posts</p>
             <h1 className="display mt-3 text-3xl font-semibold uppercase leading-[0.95] sm:text-5xl">
@@ -29,16 +30,18 @@ export default function SecurityGuardsPage() {
               protected.
             </p>
           </div>
-          <Photo
-            {...photos.officer}
-            priority
-            crop="hero"
-            sizes="(min-width: 1024px) 42vw, 100vw"
-          />
         </div>
       </section>
 
-      <IndustryVideo slug="security-guards" dir="services" />
+      <section className="border-b border-line">
+        <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+          <Photo
+            {...photos.officer}
+            crop="hero"
+            sizes="(min-width: 1024px) 42vw, 100vw"
+            />
+        </div>
+      </section>
 
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">

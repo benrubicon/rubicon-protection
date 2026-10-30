@@ -42,8 +42,8 @@ export function IndustryVideo({ slug, dir = "industries" }: { slug: string; dir?
 
   return (
     <section className="border-b border-line">
-      <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
-        <div className="photo-frame relative aspect-video overflow-hidden lg:aspect-[21/9]">
+      <div className="mx-auto max-w-6xl px-0 py-0 sm:px-6 sm:py-6">
+        <div className="relative aspect-video overflow-hidden bg-black sm:photo-frame lg:aspect-[21/9]">
           {reducedMotion ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img src={`${base}-poster.jpg`} alt="" className="h-full w-full object-cover" />
@@ -55,12 +55,13 @@ export function IndustryVideo({ slug, dir = "industries" }: { slug: string; dir?
               muted
               loop
               playsInline
-              preload="none"
+              preload="metadata"
               poster={`${base}-poster.jpg`}
               aria-hidden
             >
-              <source src={`${base}.webm`} type="video/webm" />
+              <source src={`${base}-sm.mp4`} type="video/mp4" media="(max-width: 640px)" />
               <source src={`${base}.mp4`} type="video/mp4" />
+              <source src={`${base}.webm`} type="video/webm" />
             </video>
           )}
         </div>

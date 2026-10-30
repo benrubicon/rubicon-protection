@@ -23,10 +23,14 @@ export function IndustryPage({ industry }: { industry: Industry }) {
   const [hero, ...rest] = industry.photos;
   const related = industries.filter((item) => item.slug !== industry.slug).slice(0, 4);
 
+  const hasVideo = videoSlugs.includes(industry.slug);
+  const gallery = hasVideo ? [hero, ...rest] : rest;
+
   return (
     <>
+      {hasVideo && <IndustryVideo slug={industry.slug} />}
       <section className="border-b border-line">
-        <div className="mx-auto grid max-w-6xl items-center gap-6 px-4 py-8 sm:px-6 lg:grid-cols-[1.35fr_1fr] lg:gap-10 lg:py-10">
+        <div className={`mx-auto grid max-w-6xl items-center gap-6 px-4 py-8 sm:px-6 lg:gap-10 lg:py-10 ${hasVideo ? "" : "lg:grid-cols-[1.35fr_1fr]"}`}>
           <div>
             <p className="kicker">{industry.kicker}</p>
             <h1 className="display mt-3 text-3xl font-semibold uppercase leading-[0.95] sm:text-5xl">
@@ -34,16 +38,16 @@ export function IndustryPage({ industry }: { industry: Industry }) {
             </h1>
             <p className="mt-4 text-base leading-7 text-muted sm:text-lg sm:leading-8">{industry.lede}</p>
           </div>
-          <Photo
-            {...hero}
-            priority
-            crop="hero"
-            sizes="(min-width: 1024px) 42vw, 100vw"
-          />
+          {!hasVideo && (
+            <Photo
+              {...hero}
+              priority
+              crop="hero"
+              sizes="(min-width: 1024px) 42vw, 100vw"
+            />
+          )}
         </div>
       </section>
-
-      {videoSlugs.includes(industry.slug) && <IndustryVideo slug={industry.slug} />}
 
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
@@ -67,11 +71,11 @@ export function IndustryPage({ industry }: { industry: Industry }) {
         </div>
       </section>
 
-      {rest.length > 0 && (
+      {gallery.length > 0 && (
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-          <div className={`grid gap-6 ${rest.length > 1 ? "lg:grid-cols-2" : ""}`}>
-            {rest.map((photo) => (
+          <div className={`grid gap-6 ${gallery.length > 1 ? "lg:grid-cols-2" : ""}`}>
+            {gallery.map((photo) => (
               <Photo
                 key={photo.src}
                 {...photo}
