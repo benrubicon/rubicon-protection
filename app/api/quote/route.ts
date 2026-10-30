@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export const runtime = "nodejs";
 
 const TO_EMAIL = process.env.QUOTE_TO_EMAIL || "info@rubiconprotection.com";
-const FROM_EMAIL = process.env.QUOTE_FROM_EMAIL || "info@rubiconprotection.com";
+const FROM_EMAIL = process.env.BREVO_SENDER_EMAIL || "info@rubiconprotection.com";
 const FROM_NAME = "Rubicon Website";
 
 function clean(value: unknown, max = 4000) {
