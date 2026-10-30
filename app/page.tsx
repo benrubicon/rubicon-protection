@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
-import { CredentialStrip } from "@/components/CredentialStrip";
 import { Hero } from "@/components/Hero";
 import { NationwideBand } from "@/components/NationwideBand";
 import { Photo } from "@/components/Photo";
@@ -13,7 +12,6 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <CredentialStrip />
 
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">

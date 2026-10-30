@@ -42,9 +42,6 @@ export default function ContactPage() {
             </a>
           </li>
         </ul>
-        <p className="mt-8 text-sm leading-6 text-muted">
-          {site.licenses.guard}. {site.licenses.investigator}.
-        </p>
         <Photo
           {...photos.officer}
           className="mt-10"

@@ -8,6 +8,7 @@ export const site = {
   licenses: {
     guard: "AZ DPS Security Guard Company #1732763",
     investigator: "AZ DPS Private Investigator #1732762",
+    washington: "WA License #1076",
   },
 } as const;
 
