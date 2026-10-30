@@ -3,7 +3,7 @@
 import { FormEvent, useMemo, useState } from "react";
 import { serviceOptions, site } from "@/lib/site";
 
-type Status = "idle" | "ready" | "error";
+type Status = "idle" | "sending" | "sent" | "ready" | "error";
 
 export function QuoteForm() {
   const [status, setStatus] = useState<Status>("idle");
@@ -25,7 +25,7 @@ export function QuoteForm() {
     [],
   );
 
-  function onSubmit(event: FormEvent<HTMLFormElement>) {
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const name = String(data.get("name") ?? "").trim();
@@ -34,6 +34,7 @@ export function QuoteForm() {
     const company = String(data.get("company") ?? "").trim();
     const service = String(data.get("service") ?? "").trim();
     const message = String(data.get("message") ?? "").trim();
+    const website = String(data.get("website") ?? "");
 
     if (!name || !email || !phone || !company || !service || !message) {
       setStatus("error");
@@ -51,6 +52,21 @@ export function QuoteForm() {
       "Message:",
       message,
     ].join("\n");
+
+    setStatus("sending");
+    try {
+      const res = await fetch("/api/quote", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ name, email, phone, company, service, message, website }),
+      });
+      if (res.ok) {
+        setStatus("sent");
+        return;
+      }
+    } catch {
+      /* fall through to the email-app fallback */
+    }
 
     const href = `mailto:${site.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     setMailtoHref(href);
@@ -112,6 +128,18 @@ export function QuoteForm() {
         />
       </label>
 
+      <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden className="hidden" />
+
+      {status === "sent" ? (
+        <p className="text-sm text-white" role="status">
+          Thank you. Your request reached Rubicon and we will reply shortly. For anything urgent, call{" "}
+          <a className="underline" href={`tel:${site.phoneTel}`}>
+            {site.phoneDisplay}
+          </a>
+          .
+        </p>
+      ) : null}
+
       {status === "error" ? (
         <p className="text-sm text-white" role="alert">
           Please complete every field so we can route the request.
@@ -134,9 +162,10 @@ export function QuoteForm() {
 
       <button
         type="submit"
+        disabled={status === "sending"}
         className="btn w-full sm:w-auto"
       >
-        Send quote request
+        {status === "sending" ? "Sending..." : "Send quote request"}
       </button>
       <p className="text-xs leading-5 text-muted">
         This form opens a message to {site.email} on this device. No data is stored
