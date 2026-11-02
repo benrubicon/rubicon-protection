@@ -168,8 +168,8 @@ export function QuoteForm() {
         {status === "sending" ? "Sending..." : "Send quote request"}
       </button>
       <p className="text-xs leading-5 text-muted">
-        This form opens a message to {site.email} on this device. No data is stored
-        on the website.
+        Your request is sent to {site.email}. We do not store it on the website, and
+        we reply by email or phone.
       </p>
     </form>
   );
