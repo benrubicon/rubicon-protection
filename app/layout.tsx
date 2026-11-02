@@ -21,6 +21,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.rubiconprotection.com"),
   alternates: { canonical: "./" },
   robots: { index: true, follow: true },
+  verification: { google: "mQ9uH9njSKvwOqJ85Y52oeh5qxIL-jbDc-x31Be1YgQ" },
   title: {
     default: "Rubicon Protection | Executive Protection and Security Guards",
     template: "%s | Rubicon Protection",
