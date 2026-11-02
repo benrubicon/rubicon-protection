@@ -3,6 +3,7 @@ import { Barlow_Condensed, Geist } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { site } from "@/lib/site";
+import { orgJsonLd } from "@/lib/seo";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -17,6 +18,9 @@ const display = Barlow_Condensed({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.rubiconprotection.com"),
+  alternates: { canonical: "./" },
+  robots: { index: true, follow: true },
   title: {
     default: "Rubicon Protection | Executive Protection and Security Guards",
     template: "%s | Rubicon Protection",
@@ -33,7 +37,12 @@ export const metadata: Metadata = {
     description:
       "Executive protection, event security, and security guards. Arizona based. Worldwide reach.",
     type: "website",
+    siteName: "Rubicon Protection",
+    locale: "en_US",
+    url: "https://www.rubiconprotection.com",
+    images: [{ url: "/logo-lion.png", width: 914, height: 914, alt: "Rubicon Protection lion logo" }],
   },
+  twitter: { card: "summary", title: "Rubicon Protection", description: "Executive protection, event security, and security guards. Arizona based. Worldwide reach." },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -43,6 +52,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${display.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-background font-sans text-foreground">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+        />
         <a className="skip-link" href="#main">
           Skip to content
         </a>
