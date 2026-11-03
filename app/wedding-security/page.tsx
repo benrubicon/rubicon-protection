@@ -6,7 +6,7 @@ import { IndustryVideo } from "@/components/IndustryVideo";
 export const metadata: Metadata = {
   title: "Wedding Security",
   description:
-    "Wedding security: guest list management, alcohol service security, and staffing to your venue's security requirements. Rubicon Protection, call 833-217-1117.",
+    "Wedding security: guest list management, alcohol service security, and suited or uniformed officers staffed to your venue's rules. Rubicon Protection, 833-217-1117.",
 };
 
 const services = [
@@ -16,7 +16,7 @@ const services = [
   },
   {
     t: "Alcohol service",
-    d: "Many venues require security whenever alcohol is served. Uniformed officers cover the bar and entrances, watch for ID and intoxication issues, de-escalate calmly, work with the venue and bartenders, and help guests leave safely at the end of the night.",
+    d: "Many venues require security whenever alcohol is served. Officers in uniform or suits cover the bar and entrances, watch for ID and intoxication issues, de-escalate calmly, work with the venue and bartenders, and help guests leave safely at the end of the night.",
   },
   {
     t: "Venue requirements",
@@ -40,7 +40,7 @@ const steps = [
   {
     n: "02",
     t: "Staff",
-    d: "Put selected, uniformed officers on the right posts: check-in, bar, floor, and lot.",
+    d: "Put selected officers, in uniform or suits, on the right posts: check-in, bar, floor, and lot.",
   },
   {
     n: "03",
@@ -64,7 +64,8 @@ export default function WeddingSecurityPage() {
             100-guest receptions up: the guest list at the door, the bar when
             alcohol is served, and whatever security your venue requires. A
             quiet presence that keeps the day running without getting in the
-            way of it.
+            way of it. Our officers can work in suits, not just uniforms, so
+            security blends into the wedding party&apos;s dress code.
           </p>
           <p className="mt-4 max-w-3xl text-sm leading-7 text-muted">
             Larger events:{" "}
