@@ -93,7 +93,12 @@ export default function EventSecurityPage() {
               Whether it is 18,000 people at an open-air amphitheater or 100 at a
               wedding, we have secured events, concerts, and conventions across
               that range. Rubicon will help plan, staff, and run the venue you
-              have—not a template that only fits large arenas.
+              have—not a template that only fits large arenas. Planning a
+              wedding? See{" "}
+              <Link className="text-white underline" href="/wedding-security">
+                Wedding Security
+              </Link>
+              .
             </p>
           </article>
         </div>

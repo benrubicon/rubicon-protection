@@ -21,6 +21,7 @@ export const nationwide = {
 export const serviceNav = [
   { href: "/executive-protection", label: "Executive Protection" },
   { href: "/event-security", label: "Event Security" },
+  { href: "/wedding-security", label: "Wedding Security" },
   { href: "/security-guards", label: "Security Guards" },
   { href: "/national-accounts", label: "National Accounts" },
   { href: "/rentals", label: "Jet & Yacht Rentals" },
@@ -56,6 +57,7 @@ export const services = [
 export const serviceOptions = [
   "Executive Protection",
   "Event Security",
+  "Wedding Security",
   "Security Guards",
   "National Accounts",
   "Jet & Yacht Rentals",

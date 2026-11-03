@@ -23,6 +23,7 @@ export const orgJsonLd = {
   knowsAbout: [
     "Executive protection",
     "Event security",
+    "Wedding security",
     "Armed security guards",
     "Unarmed security guards",
     "Construction site security",
@@ -45,6 +46,7 @@ export const orgJsonLd = {
     itemListElement: [
       ["Executive Protection", "/executive-protection"],
       ["Event Security", "/event-security"],
+      ["Wedding Security", "/wedding-security"],
       ["Security Guards", "/security-guards"],
       ["National Accounts", "/national-accounts"],
     ].map(([name, path]) => ({

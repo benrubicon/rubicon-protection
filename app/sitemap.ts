@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/executive-protection",
     "/event-security",
+    "/wedding-security",
     "/security-guards",
     "/national-accounts",
     "/industries",

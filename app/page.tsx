@@ -26,6 +26,14 @@ export default function HomePage() {
             people: trained, experienced, and ready to support a client who
             cannot afford a weak post.
           </p>
+          <p className="mt-4 max-w-3xl text-muted leading-7">
+            We also do a lot of weddings: guest list check-in, security where
+            alcohol is served, and staffing to the venue&apos;s requirements.{" "}
+            <Link className="text-white underline" href="/wedding-security">
+              Wedding Security
+            </Link>
+            .
+          </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
               "Large events and concerts",
