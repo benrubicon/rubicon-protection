@@ -103,11 +103,21 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   trailingSlash: false,
   async redirects() {
-    return legacyRedirects.map(({ source, destination }) => ({
-      source,
-      destination,
-      permanent: true,
-    }));
+    const rules: { source: string; destination: string; permanent: boolean }[] =
+      [];
+    for (const { source, destination } of legacyRedirects) {
+      rules.push({ source, destination, permanent: true });
+      // Collapse trailing-slash → destination in one hop (avoids
+      // trailingSlash:false strip then legacy redirect = 2 hops).
+      if (!source.includes(":") && !source.endsWith("/")) {
+        rules.push({
+          source: `${source}/`,
+          destination,
+          permanent: true,
+        });
+      }
+    }
+    return rules;
   },
 };
 
