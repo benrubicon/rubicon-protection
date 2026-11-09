@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
 import { IndustryVideo } from "@/components/IndustryVideo";
 import { NationwideBand } from "@/components/NationwideBand";
@@ -28,6 +29,16 @@ export default function SecurityGuardsPage() {
               entrances, and secure areas of buildings. They check credentials and
               keep unauthorized people out of the spaces you actually need
               protected.
+            </p>
+            <p className="mt-4 text-sm leading-7 text-muted">
+              Testing a data center&apos;s physical security first? See{" "}
+              <Link
+                className="text-white underline"
+                href="/data-center-penetration-testing"
+              >
+                Data Center Penetration Testing
+              </Link>
+              .
             </p>
           </div>
         </div>

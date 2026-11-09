@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/event-security",
     "/wedding-security",
     "/security-guards",
+    "/data-center-penetration-testing",
     "/national-accounts",
     "/industries",
     ...industries.map((i) => i.href),

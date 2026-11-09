@@ -34,6 +34,18 @@ export default function HomePage() {
             </Link>
             .
           </p>
+          <p className="mt-4 max-w-3xl text-muted leading-7">
+            For data centers, Rubicon runs physical security penetration tests:
+            five years of work across dozens of facilities, done by our own
+            team.{" "}
+            <Link
+              className="text-white underline"
+              href="/data-center-penetration-testing"
+            >
+              Data Center Penetration Testing
+            </Link>
+            .
+          </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
               "Large events and concerts",
