@@ -3,8 +3,8 @@ import type { NextRequest } from "next/server";
 
 /**
  * Retired GoDaddy/WordPress paths → current App Router paths.
- * Runs in Proxy so trailing-slash variants redirect in a single hop
- * (before Next's trailingSlash:false strip).
+ * skipTrailingSlashRedirect is on so this file owns both legacy
+ * redirects and trailing-slash stripping (single 308, no chains).
  */
 const exact: Record<string, string> = {
   "/contact-us-1": "/contact",
@@ -76,7 +76,6 @@ const exact: Record<string, string> = {
   "/national-accounts-1": "/national-accounts",
 };
 
-/** Subpaths under these roots redirect; the root itself may be a live page. */
 const subpathDest: { root: string; dest: string }[] = [
   { root: "/bodyguards", dest: "/executive-protection" },
   { root: "/executive-protection", dest: "/executive-protection" },
@@ -87,45 +86,46 @@ const subpathDest: { root: string; dest: string }[] = [
   { root: "/theft", dest: "/" },
 ];
 
+function stripSlash(pathname: string): string {
+  if (pathname.length > 1 && pathname.endsWith("/")) {
+    return pathname.slice(0, -1);
+  }
+  return pathname;
+}
+
 function destinationFor(pathname: string): string | null {
-  const normalized =
-    pathname.length > 1 && pathname.endsWith("/")
-      ? pathname.slice(0, -1)
-      : pathname;
-
+  const normalized = stripSlash(pathname);
   if (exact[normalized]) return exact[normalized];
-
   for (const { root, dest } of subpathDest) {
-    if (normalized === root) {
-      // Exact root handled by `exact` when retired; live roots stay.
-      continue;
-    }
+    if (normalized === root) continue;
     if (normalized.startsWith(root + "/")) return dest;
   }
   return null;
 }
 
+function redirectTo(request: NextRequest, pathname: string) {
+  const url = new URL(request.url);
+  url.pathname = pathname;
+  // Avoid accidental trailing slash on non-root destinations
+  if (pathname !== "/" && url.pathname.endsWith("/")) {
+    url.pathname = url.pathname.slice(0, -1);
+  }
+  return NextResponse.redirect(url, 308);
+}
+
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
   const dest = destinationFor(pathname);
   if (dest) {
-    const normalized =
-      pathname.length > 1 && pathname.endsWith("/")
-        ? pathname.slice(0, -1)
-        : pathname;
+    const normalized = stripSlash(pathname);
     if (normalized !== dest) {
-      const url = request.nextUrl.clone();
-      url.pathname = dest;
-      return NextResponse.redirect(url, 308);
+      return redirectTo(request, dest);
     }
   }
 
-  // With skipTrailingSlashRedirect, strip trailing slashes ourselves
-  // so live pages stay canonical without a second hop after legacy rules.
   if (pathname.length > 1 && pathname.endsWith("/")) {
-    const url = request.nextUrl.clone();
-    url.pathname = pathname.slice(0, -1);
-    return NextResponse.redirect(url, 308);
+    return redirectTo(request, stripSlash(pathname));
   }
 
   return NextResponse.next();
