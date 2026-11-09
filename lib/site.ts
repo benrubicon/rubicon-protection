@@ -23,6 +23,10 @@ export const serviceNav = [
   { href: "/event-security", label: "Event Security" },
   { href: "/wedding-security", label: "Wedding Security" },
   { href: "/security-guards", label: "Security Guards" },
+  {
+    href: "/data-center-penetration-testing",
+    label: "Data Center Penetration Testing",
+  },
   { href: "/national-accounts", label: "National Accounts" },
   { href: "/rentals", label: "Jet & Yacht Rentals" },
 ] as const;
@@ -59,6 +63,7 @@ export const serviceOptions = [
   "Event Security",
   "Wedding Security",
   "Security Guards",
+  "Data Center Penetration Testing",
   "National Accounts",
   "Jet & Yacht Rentals",
   "Other",
