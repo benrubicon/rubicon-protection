@@ -40,7 +40,6 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Rubicon Protection",
     locale: "en_US",
-    url: "https://www.rubiconprotection.com",
     images: [{ url: "/logo-lion.png", width: 914, height: 914, alt: "Rubicon Protection lion logo" }],
   },
   twitter: { card: "summary", title: "Rubicon Protection", description: "Executive protection, event security, and security guards. Arizona based. Worldwide reach." },
