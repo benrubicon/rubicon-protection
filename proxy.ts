@@ -106,19 +106,29 @@ function destinationFor(pathname: string): string | null {
 }
 
 export function proxy(request: NextRequest) {
-  const dest = destinationFor(request.nextUrl.pathname);
-  if (!dest) return NextResponse.next();
+  const { pathname } = request.nextUrl;
+  const dest = destinationFor(pathname);
+  if (dest) {
+    const normalized =
+      pathname.length > 1 && pathname.endsWith("/")
+        ? pathname.slice(0, -1)
+        : pathname;
+    if (normalized !== dest) {
+      const url = request.nextUrl.clone();
+      url.pathname = dest;
+      return NextResponse.redirect(url, 308);
+    }
+  }
 
-  const normalized =
-    request.nextUrl.pathname.length > 1 &&
-    request.nextUrl.pathname.endsWith("/")
-      ? request.nextUrl.pathname.slice(0, -1)
-      : request.nextUrl.pathname;
-  if (normalized === dest) return NextResponse.next();
+  // With skipTrailingSlashRedirect, strip trailing slashes ourselves
+  // so live pages stay canonical without a second hop after legacy rules.
+  if (pathname.length > 1 && pathname.endsWith("/")) {
+    const url = request.nextUrl.clone();
+    url.pathname = pathname.slice(0, -1);
+    return NextResponse.redirect(url, 308);
+  }
 
-  const url = request.nextUrl.clone();
-  url.pathname = dest;
-  return NextResponse.redirect(url, 308);
+  return NextResponse.next();
 }
 
 export const config = {

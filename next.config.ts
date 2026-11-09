@@ -102,6 +102,7 @@ const legacyRedirects: { source: string; destination: string }[] = [
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   trailingSlash: false,
+  skipTrailingSlashRedirect: true,
   async redirects() {
     const rules: { source: string; destination: string; permanent: boolean }[] =
       [];
