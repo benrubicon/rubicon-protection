@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: "Industry" };
   }
   return {
-    title: industry.title,
+    title: industry.metaTitle ?? industry.title,
     description: industry.metaDescription,
   };
 }

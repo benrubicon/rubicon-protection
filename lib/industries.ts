@@ -7,6 +7,7 @@ export type Industry = {
   kicker: string;
   summary: string;
   metaDescription: string;
+  metaTitle?: string;
   lede: string;
   paragraphs: string[];
   points: { title: string; body: string }[];
@@ -18,6 +19,7 @@ export const industries: Industry[] = [
     slug: "construction",
     href: "/industries/construction",
     title: "Construction",
+    metaTitle: "Construction Site Security",
     kicker: "Jobsite coverage",
     summary:
       "Gate control, after-hours presence, and material protection while a site is live—and after crews leave.",
@@ -214,7 +216,7 @@ export const industries: Industry[] = [
     summary:
       "Floor, parking, and event coverage for casino and tribal properties—same selective staffing we use on concert nights.",
     metaDescription:
-      "Casino and tribal security: floors, parking, and events. Rubicon Protection, 833-217-1117.",
+      "Casino and tribal security: floor, parking, and event coverage for tribal casinos and related properties. 833-217-1117.",
     lede: "Casino work is public, crowded, and unforgiving of a weak door. Screening thousands of people is a skill. So is standing a floor without becoming part of the show.",
     paragraphs: [
       "Rubicon provides security for tribal casinos and related properties. The same teams that screen concert crowds work casino doors: bags, credentials, prohibited items, and the judgment to keep the night moving.",
@@ -243,6 +245,7 @@ export const industries: Industry[] = [
     slug: "government",
     href: "/industries/government",
     title: "Government",
+    metaTitle: "Government Facility Security",
     kicker: "Civic sites",
     summary:
       "Uniformed officers for government entities: checkpoints, credential checks, and secure areas of buildings.",
@@ -309,6 +312,7 @@ export const industries: Industry[] = [
     slug: "international",
     href: "/industries/international",
     title: "International",
+    metaTitle: "International Security",
     kicker: "Europe, the UK, and Africa",
     summary:
       "Coverage in Europe, the UK, and Africa is handled through a large subcontractor network.",

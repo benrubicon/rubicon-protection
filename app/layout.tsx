@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Barlow_Condensed, Geist } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { site } from "@/lib/site";
-import { orgJsonLd } from "@/lib/seo";
+import { orgJsonLd, websiteJsonLd } from "@/lib/seo";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -32,19 +33,17 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "16x16 32x32 48x48 64x64", type: "image/x-icon" },
-      { url: "/logo-lion.png", type: "image/png" },
+      { url: "/icon-192.png", type: "image/png" },
     ],
     apple: [
       { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
     ],
   },
   openGraph: {
-    title: "Rubicon Protection",
-    description:
-      "Executive protection, event security, and security guards. Arizona based. Worldwide reach.",
     type: "website",
     siteName: "Rubicon Protection",
     locale: "en_US",
+    url: "./",
     images: [
       {
         url: "/og-rubicon-lion.png?v=20261112",
@@ -56,9 +55,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rubicon Protection",
-    description:
-      "Executive protection, event security, and security guards. Arizona based. Worldwide reach.",
     images: [
       {
         url: "/og-rubicon-lion.png?v=20261112",
@@ -81,6 +77,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
         <a className="skip-link" href="#main">
           Skip to content
         </a>
@@ -89,6 +89,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

@@ -57,6 +57,30 @@ export const services = [
     summary:
       "One call from the company. Rubicon finds appropriate coverage and staffs posts across stores and locations.",
   },
+  {
+    href: "/wedding-security",
+    title: "Wedding Security",
+    summary:
+      "Guest list check-in, security where alcohol is served, and staffing to the venue's security requirements.",
+  },
+  {
+    href: "/data-center-penetration-testing",
+    title: "Data Center Penetration Testing",
+    summary:
+      "Physical security penetration testing of data centers. Rubicon has tested dozens of facilities over 5 years and does the work itself.",
+  },
+  {
+    href: "/threat-monitoring",
+    title: "Threat Monitoring",
+    summary:
+      "Daily review of public online content about the people we protect, so the detail knows about a problem before it shows up in person.",
+  },
+  {
+    href: "/rentals",
+    title: "Jet & Yacht Rentals",
+    summary:
+      "Private jet, yacht, helicopter, and ground transport through partner Advent Jets, with Rubicon security available on request.",
+  },
 ] as const;
 
 export const serviceOptions = [
