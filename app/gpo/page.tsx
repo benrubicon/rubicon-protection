@@ -52,7 +52,7 @@ const offered = [
 export default function GpoPage() {
   return (
     <>
-      <IndustryVideo slug="national-accounts" dir="services" />
+      <IndustryVideo slug="gpo" dir="services" />
       <section className="border-b border-line">
         <div className="mx-auto grid max-w-6xl items-center gap-6 px-4 py-8 sm:px-6 lg:gap-10 lg:py-10">
           <div>
