@@ -5,7 +5,7 @@ import { CtaBand } from "@/components/CtaBand";
 import { industries } from "@/lib/industries";
 
 export const metadata: Metadata = {
-  title: "Industries",
+  title: "Security by Industry",
   description:
     "Rubicon Protection coverage by industry: construction, offices, parking, retail, warehouses, healthcare, casinos, government, concerts, and international.",
 };

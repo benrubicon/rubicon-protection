@@ -34,6 +34,14 @@ export const orgJsonLd = {
     "Retail security",
     "Healthcare security",
     "Government security",
+    "Office building security",
+    "Parking garage security",
+    "Warehouse security",
+    "Casino security",
+    "Concert and venue security",
+    "International security",
+    "National accounts",
+    "Jet and yacht rentals",
   ],
   hasCredential: [
     site.licenses.guard,
@@ -58,6 +66,7 @@ export const orgJsonLd = {
       ],
       ["Threat Monitoring", "/threat-monitoring"],
       ["National Accounts", "/national-accounts"],
+      ["Jet and Yacht Rentals", "/rentals"],
     ].map(([name, path]) => ({
       "@type": "Offer",
       itemOffered: { "@type": "Service", name, url: `${siteUrl}${path}` },
@@ -70,4 +79,13 @@ export const orgJsonLd = {
     email: site.email,
     availableLanguage: "English",
   },
+};
+
+export const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${siteUrl}/#website`,
+  name: site.name,
+  url: siteUrl,
+  publisher: { "@id": `${siteUrl}/#organization` },
 };

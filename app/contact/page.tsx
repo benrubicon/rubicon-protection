@@ -5,7 +5,7 @@ import { photos } from "@/lib/photos";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Get a Quote",
+  title: "Get a Security Quote",
   description:
     "Request a Rubicon Protection quote for executive protection, event security, or security guards. Call 833-217-1117 or email info@rubiconprotection.com.",
 };

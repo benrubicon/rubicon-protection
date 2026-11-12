@@ -6,7 +6,7 @@ import { IndustryVideo } from "@/components/IndustryVideo";
 export const metadata: Metadata = {
   title: "Threat Monitoring",
   description:
-    "Daily review of public online content about the people we protect, so the detail knows about a problem before it shows up in person. Public information only. 833-217-1117.",
+    "Public-information-only review of online content about the people we protect, so the detail knows about a problem before it shows up in person. 833-217-1117.",
 };
 
 const steps = [

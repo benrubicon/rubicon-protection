@@ -6,7 +6,7 @@ import { IndustryVideo } from "@/components/IndustryVideo";
 export const metadata: Metadata = {
   title: "Wedding Security",
   description:
-    "Wedding security: guest list management, alcohol service security, and suited or uniformed officers staffed to your venue's rules. Rubicon Protection, 833-217-1117.",
+    "Wedding security: guest list check-in, coverage where alcohol is served, and suited or uniformed officers staffed to the venue's rules. 833-217-1117.",
 };
 
 const services = [

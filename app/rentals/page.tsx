@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Jet & Yacht Rentals",
   description:
-    "Private jet charter, yacht charter, helicopters, chauffeured ground transport and luxury vehicle rentals through our partner Advent Jets, with Rubicon security available on request. 833-217-1117.",
+    "Private jet, yacht, helicopter, and chauffeured ground transport through partner Advent Jets, with Rubicon security on request. 833-217-1117.",
 };
 
 const offerings = [
