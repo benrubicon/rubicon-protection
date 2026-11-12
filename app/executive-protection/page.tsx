@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
 import { IndustryVideo } from "@/components/IndustryVideo";
 import { Photo } from "@/components/Photo";
@@ -102,7 +103,11 @@ export default function ExecutiveProtectionPage() {
             We use software that monitors threats on social media in real time.
             Analysts can apply keywords and geo-fenced search locations, then warn
             protection teams of potential threats so the detail can adjust routes,
-            posture, or staffing before a problem becomes a scene.
+            posture, or staffing before a problem becomes a scene.{" "}
+            <Link className="text-white underline" href="/threat-monitoring">
+              Threat Monitoring
+            </Link>
+            .
           </p>
         </div>
       </section>

@@ -26,6 +26,8 @@ export const orgJsonLd = {
     "Wedding security",
     "Data center penetration testing",
     "Physical security penetration testing",
+    "Threat monitoring",
+    "Protective intelligence",
     "Armed security guards",
     "Unarmed security guards",
     "Construction site security",
@@ -54,6 +56,7 @@ export const orgJsonLd = {
         "Data Center Penetration Testing",
         "/data-center-penetration-testing",
       ],
+      ["Threat Monitoring", "/threat-monitoring"],
       ["National Accounts", "/national-accounts"],
     ].map(([name, path]) => ({
       "@type": "Offer",
