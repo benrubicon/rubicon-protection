@@ -46,6 +46,15 @@ export default function HomePage() {
             </Link>
             .
           </p>
+          <p className="mt-4 max-w-3xl text-muted leading-7">
+            We also run a threat monitoring program: daily review of public
+            online content about the people we protect, so the detail knows
+            about a problem before it shows up in person.{" "}
+            <Link className="text-white underline" href="/threat-monitoring">
+              Threat Monitoring
+            </Link>
+            .
+          </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
               "Large events and concerts",

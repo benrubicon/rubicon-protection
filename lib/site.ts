@@ -27,6 +27,7 @@ export const serviceNav = [
     href: "/data-center-penetration-testing",
     label: "Data Center Penetration Testing",
   },
+  { href: "/threat-monitoring", label: "Threat Monitoring" },
   { href: "/national-accounts", label: "National Accounts" },
   { href: "/rentals", label: "Jet & Yacht Rentals" },
 ] as const;
@@ -64,6 +65,7 @@ export const serviceOptions = [
   "Wedding Security",
   "Security Guards",
   "Data Center Penetration Testing",
+  "Threat Monitoring",
   "National Accounts",
   "Jet & Yacht Rentals",
   "Other",
