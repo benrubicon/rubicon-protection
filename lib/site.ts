@@ -29,6 +29,7 @@ export const serviceNav = [
   },
   { href: "/threat-monitoring", label: "Threat Monitoring" },
   { href: "/national-accounts", label: "National Accounts" },
+  { href: "/gpo", label: "GPO Security" },
   { href: "/rentals", label: "Jet & Yacht Rentals" },
 ] as const;
 
@@ -56,6 +57,12 @@ export const services = [
     title: "National Accounts",
     summary:
       "One call from the company. Rubicon finds appropriate coverage and staffs posts across stores and locations.",
+  },
+  {
+    href: "/gpo",
+    title: "GPO Security",
+    summary:
+      "GPOs and their members make one call. Rubicon staffs posts at one site or many across the US, Canada, the UK, Europe, and parts of Africa.",
   },
   {
     href: "/wedding-security",
@@ -91,6 +98,7 @@ export const serviceOptions = [
   "Data Center Penetration Testing",
   "Threat Monitoring",
   "National Accounts",
+  "GPO Security",
   "Jet & Yacht Rentals",
   "Other",
 ] as const;
