@@ -16,6 +16,7 @@ Licenses: AZ DPS Security Guard Company #1732763; AZ DPS Private Investigator #1
 - [Data Center Penetration Testing](https://www.rubiconprotection.com/data-center-penetration-testing): physical security penetration testing of data centers; Rubicon has tested dozens of facilities over 5 years and does the work itself.
 - [Threat Monitoring](https://www.rubiconprotection.com/threat-monitoring): daily review of public online content about the people we protect, so the detail knows about a problem before it shows up in person. Public information only.
 - [National Accounts](https://www.rubiconprotection.com/national-accounts): one call from the company; Rubicon staffs posts across locations.
+- [GPO Security](https://www.rubiconprotection.com/gpo): GPOs and their member organizations make one call; Rubicon staffs posts at one site or many across the US, Canada, the UK, Europe, and parts of Africa.
 - [Jet and Yacht Rentals](https://www.rubiconprotection.com/rentals): private jet, yacht, helicopter and ground transport through partner Advent Jets.
 
 ## Industries

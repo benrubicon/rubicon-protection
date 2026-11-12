@@ -41,6 +41,8 @@ export const orgJsonLd = {
     "Concert and venue security",
     "International security",
     "National accounts",
+    "GPO security",
+    "Group purchasing organizations",
     "Jet and yacht rentals",
   ],
   hasCredential: [
@@ -66,6 +68,7 @@ export const orgJsonLd = {
       ],
       ["Threat Monitoring", "/threat-monitoring"],
       ["National Accounts", "/national-accounts"],
+      ["GPO Security", "/gpo"],
       ["Jet and Yacht Rentals", "/rentals"],
     ].map(([name, path]) => ({
       "@type": "Offer",
