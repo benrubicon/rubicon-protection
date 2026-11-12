@@ -30,8 +30,13 @@ export const metadata: Metadata = {
     "Arizona based security company with worldwide reach. Executive protection, event security, and armed or unarmed guards for commercial clients.",
   applicationName: site.name,
   icons: {
-    icon: "/logo-lion.png",
-    apple: "/logo-lion.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "16x16 32x32 48x48 64x64", type: "image/x-icon" },
+      { url: "/logo-lion.png", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
   openGraph: {
     title: "Rubicon Protection",
@@ -40,9 +45,29 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Rubicon Protection",
     locale: "en_US",
-    images: [{ url: "/logo-lion.png", width: 914, height: 914, alt: "Rubicon Protection lion logo" }],
+    images: [
+      {
+        url: "/og-rubicon-lion.png?v=20261112",
+        width: 1200,
+        height: 630,
+        alt: "Rubicon Protection lion logo",
+      },
+    ],
   },
-  twitter: { card: "summary", title: "Rubicon Protection", description: "Executive protection, event security, and security guards. Arizona based. Worldwide reach." },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rubicon Protection",
+    description:
+      "Executive protection, event security, and security guards. Arizona based. Worldwide reach.",
+    images: [
+      {
+        url: "/og-rubicon-lion.png?v=20261112",
+        width: 1200,
+        height: 630,
+        alt: "Rubicon Protection lion logo",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
